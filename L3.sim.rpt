@@ -1,5 +1,5 @@
 Simulator report for L3
-Mon Oct 02 12:22:27 2017
+Tue Oct 03 21:24:56 2017
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -47,9 +47,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 286 nodes    ;
-; Simulation Coverage         ;      58.39 % ;
-; Total Number of Transitions ; 3728         ;
+; Simulation Netlist Size     ; 291 nodes    ;
+; Simulation Coverage         ;      66.67 % ;
+; Total Number of Transitions ; 3783         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix      ;
 +-----------------------------+--------------+
@@ -108,13 +108,13 @@ Please refer to fitter text-based report (*.fit.rpt) to view logical memory repo
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      58.39 % ;
-; Total nodes checked                                 ; 286          ;
-; Total output ports checked                          ; 286          ;
-; Total output ports with complete 1/0-value coverage ; 167          ;
-; Total output ports with no 1/0-value coverage       ; 101          ;
-; Total output ports with no 1-value coverage         ; 101          ;
-; Total output ports with no 0-value coverage         ; 119          ;
+; Total coverage as a percentage                      ;      66.67 % ;
+; Total nodes checked                                 ; 291          ;
+; Total output ports checked                          ; 291          ;
+; Total output ports with complete 1/0-value coverage ; 194          ;
+; Total output ports with no 1/0-value coverage       ; 82           ;
+; Total output ports with no 1-value coverage         ; 83           ;
+; Total output ports with no 0-value coverage         ; 96           ;
 +-----------------------------------------------------+--------------+
 
 
@@ -138,17 +138,27 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |L3|Res[1]                                                                                        ; |L3|Res[1]                                                                                  ; pin_out          ;
 ; |L3|Res[0]                                                                                        ; |L3|Res[0]                                                                                  ; pin_out          ;
 ; |L3|C                                                                                             ; |L3|C                                                                                       ; out              ;
+; |L3|A[5]                                                                                          ; |L3|A[5]                                                                                    ; pin_out          ;
 ; |L3|A[3]                                                                                          ; |L3|A[3]                                                                                    ; pin_out          ;
 ; |L3|A[2]                                                                                          ; |L3|A[2]                                                                                    ; pin_out          ;
 ; |L3|A[1]                                                                                          ; |L3|A[1]                                                                                    ; pin_out          ;
 ; |L3|A[0]                                                                                          ; |L3|A[0]                                                                                    ; pin_out          ;
 ; |L3|inst38                                                                                        ; |L3|inst38                                                                                  ; out0             ;
+; |L3|Data1[5]                                                                                      ; |L3|Data1[5]                                                                                ; pin_out          ;
 ; |L3|Data1[2]                                                                                      ; |L3|Data1[2]                                                                                ; pin_out          ;
 ; |L3|Data1[1]                                                                                      ; |L3|Data1[1]                                                                                ; pin_out          ;
-; |L3|inst15                                                                                        ; |L3|inst15                                                                                  ; out0             ;
+; |L3|Data1[0]                                                                                      ; |L3|Data1[0]                                                                                ; pin_out          ;
+; |L3|inst18                                                                                        ; |L3|inst18                                                                                  ; out0             ;
 ; |L3|inst23                                                                                        ; |L3|inst23                                                                                  ; out0             ;
+; |L3|Adres[4]                                                                                      ; |L3|Adres[4]                                                                                ; out              ;
+; |L3|Adres[2]                                                                                      ; |L3|Adres[2]                                                                                ; out              ;
+; |L3|Adres[1]                                                                                      ; |L3|Adres[1]                                                                                ; out              ;
+; |L3|Adres[0]                                                                                      ; |L3|Adres[0]                                                                                ; out              ;
 ; |L3|inst36                                                                                        ; |L3|inst36                                                                                  ; out0             ;
 ; |L3|inst24                                                                                        ; |L3|inst24                                                                                  ; out0             ;
+; |L3|inst19                                                                                        ; |L3|inst19                                                                                  ; out0             ;
+; |L3|inst21                                                                                        ; |L3|inst21                                                                                  ; out0             ;
+; |L3|RAM[5]                                                                                        ; |L3|RAM[5]                                                                                  ; pin_out          ;
 ; |L3|RAM[4]                                                                                        ; |L3|RAM[4]                                                                                  ; pin_out          ;
 ; |L3|RAM[3]                                                                                        ; |L3|RAM[3]                                                                                  ; pin_out          ;
 ; |L3|RAM[2]                                                                                        ; |L3|RAM[2]                                                                                  ; pin_out          ;
@@ -159,60 +169,70 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |L3|Adr[2]                                                                                        ; |L3|Adr[2]                                                                                  ; pin_out          ;
 ; |L3|Adr[1]                                                                                        ; |L3|Adr[1]                                                                                  ; pin_out          ;
 ; |L3|Adr[0]                                                                                        ; |L3|Adr[0]                                                                                  ; pin_out          ;
-; |L3|inst20                                                                                        ; |L3|inst20                                                                                  ; out0             ;
+; |L3|inst41                                                                                        ; |L3|inst41                                                                                  ; out0             ;
+; |L3|inst25                                                                                        ; |L3|inst25                                                                                  ; out0             ;
 ; |L3|AdA[3]                                                                                        ; |L3|AdA[3]                                                                                  ; pin_out          ;
 ; |L3|AdA[2]                                                                                        ; |L3|AdA[2]                                                                                  ; pin_out          ;
 ; |L3|AdA[1]                                                                                        ; |L3|AdA[1]                                                                                  ; pin_out          ;
-; |L3|AdA[0]                                                                                        ; |L3|AdA[0]                                                                                  ; pin_out          ;
+; |L3|inst39                                                                                        ; |L3|inst39                                                                                  ; out0             ;
 ; |L3|inst37                                                                                        ; |L3|inst37                                                                                  ; out0             ;
-; |L3|AdB[4]                                                                                        ; |L3|AdB[4]                                                                                  ; pin_out          ;
 ; |L3|AdB[3]                                                                                        ; |L3|AdB[3]                                                                                  ; pin_out          ;
 ; |L3|AdB[2]                                                                                        ; |L3|AdB[2]                                                                                  ; pin_out          ;
 ; |L3|AdB[1]                                                                                        ; |L3|AdB[1]                                                                                  ; pin_out          ;
+; |L3|AdB[0]                                                                                        ; |L3|AdB[0]                                                                                  ; pin_out          ;
+; |L3|inst30                                                                                        ; |L3|inst30                                                                                  ; out0             ;
+; |L3|OutData[5]                                                                                    ; |L3|OutData[5]                                                                              ; pin_out          ;
 ; |L3|OutData[3]                                                                                    ; |L3|OutData[3]                                                                              ; pin_out          ;
 ; |L3|OutData[2]                                                                                    ; |L3|OutData[2]                                                                              ; pin_out          ;
 ; |L3|OutData[1]                                                                                    ; |L3|OutData[1]                                                                              ; pin_out          ;
 ; |L3|OutData[0]                                                                                    ; |L3|OutData[0]                                                                              ; pin_out          ;
+; |L3|SUMA[5]                                                                                       ; |L3|SUMA[5]                                                                                 ; pin_out          ;
 ; |L3|SUMA[3]                                                                                       ; |L3|SUMA[3]                                                                                 ; pin_out          ;
 ; |L3|SUMA[2]                                                                                       ; |L3|SUMA[2]                                                                                 ; pin_out          ;
 ; |L3|SUMA[1]                                                                                       ; |L3|SUMA[1]                                                                                 ; pin_out          ;
 ; |L3|SUMA[0]                                                                                       ; |L3|SUMA[0]                                                                                 ; pin_out          ;
+; |L3|B[5]                                                                                          ; |L3|B[5]                                                                                    ; pin_out          ;
 ; |L3|B[3]                                                                                          ; |L3|B[3]                                                                                    ; pin_out          ;
 ; |L3|B[2]                                                                                          ; |L3|B[2]                                                                                    ; pin_out          ;
 ; |L3|B[1]                                                                                          ; |L3|B[1]                                                                                    ; pin_out          ;
-; |L3|Data2[3]                                                                                      ; |L3|Data2[3]                                                                                ; pin_out          ;
+; |L3|B[0]                                                                                          ; |L3|B[0]                                                                                    ; pin_out          ;
+; |L3|Data2[5]                                                                                      ; |L3|Data2[5]                                                                                ; pin_out          ;
 ; |L3|Data2[2]                                                                                      ; |L3|Data2[2]                                                                                ; pin_out          ;
 ; |L3|Data2[1]                                                                                      ; |L3|Data2[1]                                                                                ; pin_out          ;
+; |L3|Data2[0]                                                                                      ; |L3|Data2[0]                                                                                ; pin_out          ;
 ; |L3|inst46                                                                                        ; |L3|inst46                                                                                  ; out0             ;
 ; |L3|BusEnable:inst44|inst17                                                                       ; |L3|BusEnable:inst44|inst17                                                                 ; out0             ;
 ; |L3|BusEnable:inst44|inst16                                                                       ; |L3|BusEnable:inst44|inst16                                                                 ; out0             ;
 ; |L3|BusEnable:inst44|inst15                                                                       ; |L3|BusEnable:inst44|inst15                                                                 ; out0             ;
+; |L3|BusEnable:inst44|inst                                                                         ; |L3|BusEnable:inst44|inst                                                                   ; out0             ;
 ; |L3|BusEnable:inst44|inst14                                                                       ; |L3|BusEnable:inst44|inst14                                                                 ; out0             ;
-; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[3]                                                ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[3]                                          ; regout           ;
+; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[5]                                                ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[5]                                          ; regout           ;
 ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[2]                                                ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[2]                                          ; regout           ;
 ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[1]                                                ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[1]                                          ; regout           ;
+; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[0]                                                ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[0]                                          ; regout           ;
+; |L3|BusEnable:inst28|inst17                                                                       ; |L3|BusEnable:inst28|inst17                                                                 ; out0             ;
 ; |L3|BusEnable:inst28|inst16                                                                       ; |L3|BusEnable:inst28|inst16                                                                 ; out0             ;
 ; |L3|BusEnable:inst28|inst15                                                                       ; |L3|BusEnable:inst28|inst15                                                                 ; out0             ;
+; |L3|BusEnable:inst28|inst                                                                         ; |L3|BusEnable:inst28|inst                                                                   ; out0             ;
 ; |L3|BusEnable:inst28|inst14                                                                       ; |L3|BusEnable:inst28|inst14                                                                 ; out0             ;
 ; |L3|BUSSUM2:inst29|inst                                                                           ; |L3|BUSSUM2:inst29|inst                                                                     ; out0             ;
 ; |L3|BUSSUM2:inst29|inst2                                                                          ; |L3|BUSSUM2:inst29|inst2                                                                    ; out0             ;
 ; |L3|BUSSUM2:inst29|inst3                                                                          ; |L3|BUSSUM2:inst29|inst3                                                                    ; out0             ;
 ; |L3|BUSSUM2:inst29|inst4                                                                          ; |L3|BUSSUM2:inst29|inst4                                                                    ; out0             ;
+; |L3|BUSSUM2:inst29|inst6                                                                          ; |L3|BUSSUM2:inst29|inst6                                                                    ; out0             ;
 ; |L3|BUSSUM2:inst26|inst                                                                           ; |L3|BUSSUM2:inst26|inst                                                                     ; out0             ;
 ; |L3|BUSSUM2:inst26|inst2                                                                          ; |L3|BUSSUM2:inst26|inst2                                                                    ; out0             ;
 ; |L3|BUSSUM2:inst26|inst3                                                                          ; |L3|BUSSUM2:inst26|inst3                                                                    ; out0             ;
 ; |L3|BUSSUM2:inst26|inst4                                                                          ; |L3|BUSSUM2:inst26|inst4                                                                    ; out0             ;
-; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[3]                                                ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[3]                                          ; regout           ;
+; |L3|BUSSUM2:inst26|inst6                                                                          ; |L3|BUSSUM2:inst26|inst6                                                                    ; out0             ;
 ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[2]                                                ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[2]                                          ; regout           ;
 ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[1]                                                ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[1]                                          ; regout           ;
+; |L3|BusEnable7:inst5|inst19                                                                       ; |L3|BusEnable7:inst5|inst19                                                                 ; out0             ;
 ; |L3|BusEnable7:inst5|inst18                                                                       ; |L3|BusEnable7:inst5|inst18                                                                 ; out0             ;
-; |L3|BusEnable7:inst5|inst15                                                                       ; |L3|BusEnable7:inst5|inst15                                                                 ; out0             ;
 ; |L3|BusEnable7:inst5|inst16                                                                       ; |L3|BusEnable7:inst5|inst16                                                                 ; out0             ;
 ; |L3|BusEnable7:inst5|inst17                                                                       ; |L3|BusEnable7:inst5|inst17                                                                 ; out0             ;
-; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[3]                                               ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[3]                                         ; regout           ;
 ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[2]                                               ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[2]                                         ; regout           ;
 ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[1]                                               ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[1]                                         ; regout           ;
-; |L3|BusEnable7:inst6|inst19                                                                       ; |L3|BusEnable7:inst6|inst19                                                                 ; out0             ;
 ; |L3|BusEnable7:inst6|inst18                                                                       ; |L3|BusEnable7:inst6|inst18                                                                 ; out0             ;
 ; |L3|BusEnable7:inst6|inst16                                                                       ; |L3|BusEnable7:inst6|inst16                                                                 ; out0             ;
 ; |L3|BusEnable7:inst6|inst17                                                                       ; |L3|BusEnable7:inst6|inst17                                                                 ; out0             ;
@@ -220,7 +240,6 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |L3|BUSSUM5:inst8|inst3                                                                           ; |L3|BUSSUM5:inst8|inst3                                                                     ; out0             ;
 ; |L3|BUSSUM5:inst8|inst5                                                                           ; |L3|BUSSUM5:inst8|inst5                                                                     ; out0             ;
 ; |L3|BUSSUM5:inst8|inst6                                                                           ; |L3|BUSSUM5:inst8|inst6                                                                     ; out0             ;
-; |L3|BUSSUM5:inst8|inst7                                                                           ; |L3|BUSSUM5:inst8|inst7                                                                     ; out0             ;
 ; |L3|BusEnable7:inst1|inst19                                                                       ; |L3|BusEnable7:inst1|inst19                                                                 ; out0             ;
 ; |L3|BusEnable7:inst1|inst18                                                                       ; |L3|BusEnable7:inst1|inst18                                                                 ; out0             ;
 ; |L3|BusEnable7:inst1|inst15                                                                       ; |L3|BusEnable7:inst1|inst15                                                                 ; out0             ;
@@ -236,8 +255,10 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated|ram_block1a2 ; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated|q_a[2] ; portadataout0    ;
 ; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated|ram_block1a3 ; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated|q_a[3] ; portadataout0    ;
 ; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated|ram_block1a4 ; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated|q_a[4] ; portadataout0    ;
-; |L3|Counter8:inst31|inst                                                                          ; |L3|Counter8:inst31|inst                                                                    ; out0             ;
-; |L3|Counter8:inst31|74163:inst1|f74163:sub|134                                                    ; |L3|Counter8:inst31|74163:inst1|f74163:sub|134                                              ; regout           ;
+; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated|ram_block1a5 ; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated|q_a[5] ; portadataout0    ;
+; |L3|BusEnable:inst14|inst17                                                                       ; |L3|BusEnable:inst14|inst17                                                                 ; out0             ;
+; |L3|BusEnable:inst14|inst16                                                                       ; |L3|BusEnable:inst14|inst16                                                                 ; out0             ;
+; |L3|BusEnable:inst14|inst15                                                                       ; |L3|BusEnable:inst14|inst15                                                                 ; out0             ;
 ; |L3|Counter8:inst31|74163:inst1|f74163:sub|131                                                    ; |L3|Counter8:inst31|74163:inst1|f74163:sub|131                                              ; out0             ;
 ; |L3|Counter8:inst31|74163:inst1|f74163:sub|117                                                    ; |L3|Counter8:inst31|74163:inst1|f74163:sub|117                                              ; out0             ;
 ; |L3|Counter8:inst31|74163:inst1|f74163:sub|122                                                    ; |L3|Counter8:inst31|74163:inst1|f74163:sub|122                                              ; regout           ;
@@ -247,23 +268,29 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |L3|Counter8:inst31|74163:inst1|f74163:sub|109                                                    ; |L3|Counter8:inst31|74163:inst1|f74163:sub|109                                              ; out0             ;
 ; |L3|Counter8:inst31|74163:inst1|f74163:sub|74                                                     ; |L3|Counter8:inst31|74163:inst1|f74163:sub|74                                               ; out0             ;
 ; |L3|Counter8:inst31|74163:inst1|f74163:sub|34                                                     ; |L3|Counter8:inst31|74163:inst1|f74163:sub|34                                               ; regout           ;
+; |L3|BusEnable7:inst34|inst18                                                                      ; |L3|BusEnable7:inst34|inst18                                                                ; out0             ;
+; |L3|BusEnable7:inst34|inst15                                                                      ; |L3|BusEnable7:inst34|inst15                                                                ; out0             ;
+; |L3|BusEnable7:inst34|inst17                                                                      ; |L3|BusEnable7:inst34|inst17                                                                ; out0             ;
 ; |L3|BUSSUM5:inst33|inst                                                                           ; |L3|BUSSUM5:inst33|inst                                                                     ; out0             ;
 ; |L3|BUSSUM5:inst33|inst3                                                                          ; |L3|BUSSUM5:inst33|inst3                                                                    ; out0             ;
 ; |L3|BUSSUM5:inst33|inst5                                                                          ; |L3|BUSSUM5:inst33|inst5                                                                    ; out0             ;
-; |L3|BUSSUM5:inst33|inst6                                                                          ; |L3|BUSSUM5:inst33|inst6                                                                    ; out0             ;
+; |L3|BUSSUM5:inst33|inst7                                                                          ; |L3|BUSSUM5:inst33|inst7                                                                    ; out0             ;
 ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|ram_block1a0     ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|q_a[0]     ; portadataout0    ;
 ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|ram_block1a1     ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|q_a[1]     ; portadataout0    ;
 ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|ram_block1a2     ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|q_a[2]     ; portadataout0    ;
-; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|ram_block1a3     ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|q_a[3]     ; portadataout0    ;
+; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|ram_block1a5     ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|q_a[5]     ; portadataout0    ;
 ; |L3|BUSSUM2:inst12|inst                                                                           ; |L3|BUSSUM2:inst12|inst                                                                     ; out0             ;
 ; |L3|BUSSUM2:inst12|inst2                                                                          ; |L3|BUSSUM2:inst12|inst2                                                                    ; out0             ;
 ; |L3|BUSSUM2:inst12|inst3                                                                          ; |L3|BUSSUM2:inst12|inst3                                                                    ; out0             ;
-; |L3|BUSSUM2:inst12|inst4                                                                          ; |L3|BUSSUM2:inst12|inst4                                                                    ; out0             ;
+; |L3|BUSSUM2:inst12|inst6                                                                          ; |L3|BUSSUM2:inst12|inst6                                                                    ; out0             ;
+; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[5]                                                ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[5]                                          ; regout           ;
 ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[2]                                                ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[2]                                          ; regout           ;
 ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[1]                                                ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[1]                                          ; regout           ;
+; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[0]                                                ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[0]                                          ; regout           ;
 ; |L3|BusEnable:inst27|inst17                                                                       ; |L3|BusEnable:inst27|inst17                                                                 ; out0             ;
 ; |L3|BusEnable:inst27|inst16                                                                       ; |L3|BusEnable:inst27|inst16                                                                 ; out0             ;
 ; |L3|BusEnable:inst27|inst15                                                                       ; |L3|BusEnable:inst27|inst15                                                                 ; out0             ;
+; |L3|BusEnable:inst27|inst                                                                         ; |L3|BusEnable:inst27|inst                                                                   ; out0             ;
 ; |L3|BusEnable:inst27|inst14                                                                       ; |L3|BusEnable:inst27|inst14                                                                 ; out0             ;
 ; |L3|DivergentBlock:inst17|74163:inst1|f74163:sub|134                                              ; |L3|DivergentBlock:inst17|74163:inst1|f74163:sub|134                                        ; regout           ;
 ; |L3|DivergentBlock:inst17|74163:inst1|f74163:sub|137                                              ; |L3|DivergentBlock:inst17|74163:inst1|f74163:sub|137                                        ; out0             ;
@@ -283,6 +310,7 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |L3|DivergentBlock:inst17|16dmux:inst|22                                                          ; |L3|DivergentBlock:inst17|16dmux:inst|22                                                    ; out0             ;
 ; |L3|DivergentBlock:inst17|16dmux:inst|20                                                          ; |L3|DivergentBlock:inst17|16dmux:inst|20                                                    ; out0             ;
 ; |L3|DivergentBlock:inst17|16dmux:inst|14                                                          ; |L3|DivergentBlock:inst17|16dmux:inst|14                                                    ; out0             ;
+; |L3|DivergentBlock:inst17|16dmux:inst|13                                                          ; |L3|DivergentBlock:inst17|16dmux:inst|13                                                    ; out0             ;
 ; |L3|DivergentBlock:inst17|16dmux:inst|26                                                          ; |L3|DivergentBlock:inst17|16dmux:inst|26                                                    ; out0             ;
 ; |L3|DivergentBlock:inst17|16dmux:inst|27                                                          ; |L3|DivergentBlock:inst17|16dmux:inst|27                                                    ; out0             ;
 ; |L3|DivergentBlock:inst17|16dmux:inst|28                                                          ; |L3|DivergentBlock:inst17|16dmux:inst|28                                                    ; out0             ;
@@ -290,246 +318,204 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |L3|DivergentBlock:inst17|16dmux:inst|30                                                          ; |L3|DivergentBlock:inst17|16dmux:inst|30                                                    ; out0             ;
 ; |L3|DivergentBlock:inst17|16dmux:inst|31                                                          ; |L3|DivergentBlock:inst17|16dmux:inst|31                                                    ; out0             ;
 ; |L3|DivergentBlock:inst17|16dmux:inst|32                                                          ; |L3|DivergentBlock:inst17|16dmux:inst|32                                                    ; out0             ;
-; |L3|DivergentBlock:inst17|16dmux:inst|33                                                          ; |L3|DivergentBlock:inst17|16dmux:inst|33                                                    ; out0             ;
 +---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                                                                                                                                           ;
-+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                         ; Output Port Name                                                                            ; Output Port Type ;
-+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
-; |L3|A[5]                                                                                          ; |L3|A[5]                                                                                    ; pin_out          ;
-; |L3|A[4]                                                                                          ; |L3|A[4]                                                                                    ; pin_out          ;
-; |L3|Data1[5]                                                                                      ; |L3|Data1[5]                                                                                ; pin_out          ;
-; |L3|Data1[4]                                                                                      ; |L3|Data1[4]                                                                                ; pin_out          ;
-; |L3|inst22                                                                                        ; |L3|inst22                                                                                  ; out0             ;
-; |L3|enable                                                                                        ; |L3|enable                                                                                  ; out              ;
-; |L3|ROM-RAM                                                                                       ; |L3|ROM-RAM                                                                                 ; out              ;
-; |L3|AutoInc                                                                                       ; |L3|AutoInc                                                                                 ; out              ;
-; |L3|Adres[7]                                                                                      ; |L3|Adres[7]                                                                                ; out              ;
-; |L3|Adres[6]                                                                                      ; |L3|Adres[6]                                                                                ; out              ;
-; |L3|Adres[5]                                                                                      ; |L3|Adres[5]                                                                                ; out              ;
-; |L3|Adres[4]                                                                                      ; |L3|Adres[4]                                                                                ; out              ;
-; |L3|Adres[3]                                                                                      ; |L3|Adres[3]                                                                                ; out              ;
-; |L3|Adres[2]                                                                                      ; |L3|Adres[2]                                                                                ; out              ;
-; |L3|Adres[1]                                                                                      ; |L3|Adres[1]                                                                                ; out              ;
-; |L3|Adres[0]                                                                                      ; |L3|Adres[0]                                                                                ; out              ;
-; |L3|inst13                                                                                        ; |L3|inst13                                                                                  ; out0             ;
-; |L3|RAM[5]                                                                                        ; |L3|RAM[5]                                                                                  ; pin_out          ;
-; |L3|Adr[7]                                                                                        ; |L3|Adr[7]                                                                                  ; pin_out          ;
-; |L3|Adr[6]                                                                                        ; |L3|Adr[6]                                                                                  ; pin_out          ;
-; |L3|Adr[5]                                                                                        ; |L3|Adr[5]                                                                                  ; pin_out          ;
-; |L3|AdA[7]                                                                                        ; |L3|AdA[7]                                                                                  ; pin_out          ;
-; |L3|AdA[6]                                                                                        ; |L3|AdA[6]                                                                                  ; pin_out          ;
-; |L3|AdA[5]                                                                                        ; |L3|AdA[5]                                                                                  ; pin_out          ;
-; |L3|AdA[4]                                                                                        ; |L3|AdA[4]                                                                                  ; pin_out          ;
-; |L3|AdB[7]                                                                                        ; |L3|AdB[7]                                                                                  ; pin_out          ;
-; |L3|AdB[6]                                                                                        ; |L3|AdB[6]                                                                                  ; pin_out          ;
-; |L3|AdB[5]                                                                                        ; |L3|AdB[5]                                                                                  ; pin_out          ;
-; |L3|AdB[0]                                                                                        ; |L3|AdB[0]                                                                                  ; pin_out          ;
-; |L3|OutData[5]                                                                                    ; |L3|OutData[5]                                                                              ; pin_out          ;
-; |L3|SUMA[5]                                                                                       ; |L3|SUMA[5]                                                                                 ; pin_out          ;
-; |L3|SUMA[4]                                                                                       ; |L3|SUMA[4]                                                                                 ; pin_out          ;
-; |L3|B[5]                                                                                          ; |L3|B[5]                                                                                    ; pin_out          ;
-; |L3|B[4]                                                                                          ; |L3|B[4]                                                                                    ; pin_out          ;
-; |L3|B[0]                                                                                          ; |L3|B[0]                                                                                    ; pin_out          ;
-; |L3|Data2[5]                                                                                      ; |L3|Data2[5]                                                                                ; pin_out          ;
-; |L3|Data2[0]                                                                                      ; |L3|Data2[0]                                                                                ; pin_out          ;
-; |L3|BusEnable:inst44|inst                                                                         ; |L3|BusEnable:inst44|inst                                                                   ; out0             ;
-; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[5]                                                ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[5]                                          ; regout           ;
-; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[0]                                                ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[0]                                          ; regout           ;
-; |L3|BusEnable:inst28|inst17                                                                       ; |L3|BusEnable:inst28|inst17                                                                 ; out0             ;
-; |L3|BusEnable:inst28|inst                                                                         ; |L3|BusEnable:inst28|inst                                                                   ; out0             ;
-; |L3|BusEnable:inst28|inst13                                                                       ; |L3|BusEnable:inst28|inst13                                                                 ; out0             ;
-; |L3|BUSSUM2:inst29|inst5                                                                          ; |L3|BUSSUM2:inst29|inst5                                                                    ; out0             ;
-; |L3|BUSSUM2:inst29|inst6                                                                          ; |L3|BUSSUM2:inst29|inst6                                                                    ; out0             ;
-; |L3|BUSSUM2:inst26|inst6                                                                          ; |L3|BUSSUM2:inst26|inst6                                                                    ; out0             ;
-; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[7]                                                ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[7]                                          ; regout           ;
-; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[6]                                                ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[6]                                          ; regout           ;
-; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[5]                                                ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[5]                                          ; regout           ;
-; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[0]                                                ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[0]                                          ; regout           ;
-; |L3|BusEnable7:inst5|inst19                                                                       ; |L3|BusEnable7:inst5|inst19                                                                 ; out0             ;
-; |L3|BusEnable7:inst5|inst                                                                         ; |L3|BusEnable7:inst5|inst                                                                   ; out0             ;
-; |L3|BusEnable7:inst5|inst13                                                                       ; |L3|BusEnable7:inst5|inst13                                                                 ; out0             ;
-; |L3|BusEnable7:inst5|inst14                                                                       ; |L3|BusEnable7:inst5|inst14                                                                 ; out0             ;
-; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[7]                                               ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[7]                                         ; regout           ;
-; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[6]                                               ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[6]                                         ; regout           ;
-; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[5]                                               ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[5]                                         ; regout           ;
-; |L3|BusEnable7:inst6|inst                                                                         ; |L3|BusEnable7:inst6|inst                                                                   ; out0             ;
-; |L3|BusEnable7:inst6|inst13                                                                       ; |L3|BusEnable7:inst6|inst13                                                                 ; out0             ;
-; |L3|BusEnable7:inst6|inst14                                                                       ; |L3|BusEnable7:inst6|inst14                                                                 ; out0             ;
-; |L3|BusEnable7:inst6|inst15                                                                       ; |L3|BusEnable7:inst6|inst15                                                                 ; out0             ;
-; |L3|BUSSUM5:inst8|inst8                                                                           ; |L3|BUSSUM5:inst8|inst8                                                                     ; out0             ;
-; |L3|BUSSUM5:inst8|inst9                                                                           ; |L3|BUSSUM5:inst8|inst9                                                                     ; out0             ;
-; |L3|BUSSUM5:inst8|inst10                                                                          ; |L3|BUSSUM5:inst8|inst10                                                                    ; out0             ;
-; |L3|BusEnable7:inst1|inst                                                                         ; |L3|BusEnable7:inst1|inst                                                                   ; out0             ;
-; |L3|BusEnable7:inst1|inst13                                                                       ; |L3|BusEnable7:inst1|inst13                                                                 ; out0             ;
-; |L3|BusEnable7:inst1|inst14                                                                       ; |L3|BusEnable7:inst1|inst14                                                                 ; out0             ;
-; |L3|BUSSUM5:inst7|inst8                                                                           ; |L3|BUSSUM5:inst7|inst8                                                                     ; out0             ;
-; |L3|BUSSUM5:inst7|inst9                                                                           ; |L3|BUSSUM5:inst7|inst9                                                                     ; out0             ;
-; |L3|BUSSUM5:inst7|inst10                                                                          ; |L3|BUSSUM5:inst7|inst10                                                                    ; out0             ;
-; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated|ram_block1a5 ; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated|q_a[5] ; portadataout0    ;
-; |L3|BusEnable:inst14|inst17                                                                       ; |L3|BusEnable:inst14|inst17                                                                 ; out0             ;
-; |L3|BusEnable:inst14|inst16                                                                       ; |L3|BusEnable:inst14|inst16                                                                 ; out0             ;
-; |L3|BusEnable:inst14|inst15                                                                       ; |L3|BusEnable:inst14|inst15                                                                 ; out0             ;
-; |L3|BusEnable:inst14|inst                                                                         ; |L3|BusEnable:inst14|inst                                                                   ; out0             ;
-; |L3|BusEnable:inst14|inst13                                                                       ; |L3|BusEnable:inst14|inst13                                                                 ; out0             ;
-; |L3|BusEnable:inst14|inst14                                                                       ; |L3|BusEnable:inst14|inst14                                                                 ; out0             ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|134                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|134                                              ; regout           ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|131                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|131                                              ; out0             ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|117                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|117                                              ; out0             ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|122                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|122                                              ; regout           ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|120                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|120                                              ; out0             ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|106                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|106                                              ; out0             ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|111                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|111                                              ; regout           ;
-; |L3|BusEnable7:inst34|inst19                                                                      ; |L3|BusEnable7:inst34|inst19                                                                ; out0             ;
-; |L3|BusEnable7:inst34|inst18                                                                      ; |L3|BusEnable7:inst34|inst18                                                                ; out0             ;
-; |L3|BusEnable7:inst34|inst                                                                        ; |L3|BusEnable7:inst34|inst                                                                  ; out0             ;
-; |L3|BusEnable7:inst34|inst13                                                                      ; |L3|BusEnable7:inst34|inst13                                                                ; out0             ;
-; |L3|BusEnable7:inst34|inst14                                                                      ; |L3|BusEnable7:inst34|inst14                                                                ; out0             ;
-; |L3|BusEnable7:inst34|inst15                                                                      ; |L3|BusEnable7:inst34|inst15                                                                ; out0             ;
-; |L3|BusEnable7:inst34|inst16                                                                      ; |L3|BusEnable7:inst34|inst16                                                                ; out0             ;
-; |L3|BusEnable7:inst34|inst17                                                                      ; |L3|BusEnable7:inst34|inst17                                                                ; out0             ;
-; |L3|BUSSUM5:inst33|inst8                                                                          ; |L3|BUSSUM5:inst33|inst8                                                                    ; out0             ;
-; |L3|BUSSUM5:inst33|inst9                                                                          ; |L3|BUSSUM5:inst33|inst9                                                                    ; out0             ;
-; |L3|BUSSUM5:inst33|inst10                                                                         ; |L3|BUSSUM5:inst33|inst10                                                                   ; out0             ;
-; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|ram_block1a5     ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|q_a[5]     ; portadataout0    ;
-; |L3|BUSSUM2:inst12|inst6                                                                          ; |L3|BUSSUM2:inst12|inst6                                                                    ; out0             ;
-; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[5]                                                ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[5]                                          ; regout           ;
-; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[4]                                                ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[4]                                          ; regout           ;
-; |L3|BusEnable:inst27|inst                                                                         ; |L3|BusEnable:inst27|inst                                                                   ; out0             ;
-; |L3|BusEnable:inst27|inst13                                                                       ; |L3|BusEnable:inst27|inst13                                                                 ; out0             ;
-+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                   ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                     ; Output Port Name                                                                        ; Output Port Type ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; |L3|A[4]                                                                                      ; |L3|A[4]                                                                                ; pin_out          ;
+; |L3|Data1[4]                                                                                  ; |L3|Data1[4]                                                                            ; pin_out          ;
+; |L3|enable                                                                                    ; |L3|enable                                                                              ; out              ;
+; |L3|Adres[7]                                                                                  ; |L3|Adres[7]                                                                            ; out              ;
+; |L3|Adres[6]                                                                                  ; |L3|Adres[6]                                                                            ; out              ;
+; |L3|Adres[5]                                                                                  ; |L3|Adres[5]                                                                            ; out              ;
+; |L3|Adres[3]                                                                                  ; |L3|Adres[3]                                                                            ; out              ;
+; |L3|inst13                                                                                    ; |L3|inst13                                                                              ; out0             ;
+; |L3|Adr[7]                                                                                    ; |L3|Adr[7]                                                                              ; pin_out          ;
+; |L3|Adr[6]                                                                                    ; |L3|Adr[6]                                                                              ; pin_out          ;
+; |L3|Adr[5]                                                                                    ; |L3|Adr[5]                                                                              ; pin_out          ;
+; |L3|AdA[7]                                                                                    ; |L3|AdA[7]                                                                              ; pin_out          ;
+; |L3|AdA[6]                                                                                    ; |L3|AdA[6]                                                                              ; pin_out          ;
+; |L3|AdA[5]                                                                                    ; |L3|AdA[5]                                                                              ; pin_out          ;
+; |L3|AdA[4]                                                                                    ; |L3|AdA[4]                                                                              ; pin_out          ;
+; |L3|AdA[0]                                                                                    ; |L3|AdA[0]                                                                              ; pin_out          ;
+; |L3|AdB[7]                                                                                    ; |L3|AdB[7]                                                                              ; pin_out          ;
+; |L3|AdB[6]                                                                                    ; |L3|AdB[6]                                                                              ; pin_out          ;
+; |L3|AdB[5]                                                                                    ; |L3|AdB[5]                                                                              ; pin_out          ;
+; |L3|AdB[4]                                                                                    ; |L3|AdB[4]                                                                              ; pin_out          ;
+; |L3|OutData[4]                                                                                ; |L3|OutData[4]                                                                          ; pin_out          ;
+; |L3|SUMA[4]                                                                                   ; |L3|SUMA[4]                                                                             ; pin_out          ;
+; |L3|B[4]                                                                                      ; |L3|B[4]                                                                                ; pin_out          ;
+; |L3|Data2[4]                                                                                  ; |L3|Data2[4]                                                                            ; pin_out          ;
+; |L3|BusEnable:inst44|inst13                                                                   ; |L3|BusEnable:inst44|inst13                                                             ; out0             ;
+; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[4]                                            ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[4]                                      ; regout           ;
+; |L3|BusEnable:inst28|inst13                                                                   ; |L3|BusEnable:inst28|inst13                                                             ; out0             ;
+; |L3|BUSSUM2:inst29|inst5                                                                      ; |L3|BUSSUM2:inst29|inst5                                                                ; out0             ;
+; |L3|BUSSUM2:inst26|inst5                                                                      ; |L3|BUSSUM2:inst26|inst5                                                                ; out0             ;
+; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[7]                                            ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[7]                                      ; regout           ;
+; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[6]                                            ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[6]                                      ; regout           ;
+; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[5]                                            ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[5]                                      ; regout           ;
+; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[4]                                            ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[4]                                      ; regout           ;
+; |L3|BusEnable7:inst5|inst                                                                     ; |L3|BusEnable7:inst5|inst                                                               ; out0             ;
+; |L3|BusEnable7:inst5|inst13                                                                   ; |L3|BusEnable7:inst5|inst13                                                             ; out0             ;
+; |L3|BusEnable7:inst5|inst14                                                                   ; |L3|BusEnable7:inst5|inst14                                                             ; out0             ;
+; |L3|BusEnable7:inst5|inst15                                                                   ; |L3|BusEnable7:inst5|inst15                                                             ; out0             ;
+; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[7]                                           ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[7]                                     ; regout           ;
+; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[6]                                           ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[6]                                     ; regout           ;
+; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[5]                                           ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[5]                                     ; regout           ;
+; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[4]                                           ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[4]                                     ; regout           ;
+; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[0]                                           ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[0]                                     ; regout           ;
+; |L3|BusEnable7:inst6|inst19                                                                   ; |L3|BusEnable7:inst6|inst19                                                             ; out0             ;
+; |L3|BusEnable7:inst6|inst                                                                     ; |L3|BusEnable7:inst6|inst                                                               ; out0             ;
+; |L3|BusEnable7:inst6|inst13                                                                   ; |L3|BusEnable7:inst6|inst13                                                             ; out0             ;
+; |L3|BusEnable7:inst6|inst14                                                                   ; |L3|BusEnable7:inst6|inst14                                                             ; out0             ;
+; |L3|BusEnable7:inst6|inst15                                                                   ; |L3|BusEnable7:inst6|inst15                                                             ; out0             ;
+; |L3|BUSSUM5:inst8|inst7                                                                       ; |L3|BUSSUM5:inst8|inst7                                                                 ; out0             ;
+; |L3|BUSSUM5:inst8|inst8                                                                       ; |L3|BUSSUM5:inst8|inst8                                                                 ; out0             ;
+; |L3|BUSSUM5:inst8|inst9                                                                       ; |L3|BUSSUM5:inst8|inst9                                                                 ; out0             ;
+; |L3|BUSSUM5:inst8|inst10                                                                      ; |L3|BUSSUM5:inst8|inst10                                                                ; out0             ;
+; |L3|BusEnable7:inst1|inst                                                                     ; |L3|BusEnable7:inst1|inst                                                               ; out0             ;
+; |L3|BusEnable7:inst1|inst13                                                                   ; |L3|BusEnable7:inst1|inst13                                                             ; out0             ;
+; |L3|BusEnable7:inst1|inst14                                                                   ; |L3|BusEnable7:inst1|inst14                                                             ; out0             ;
+; |L3|BUSSUM5:inst7|inst8                                                                       ; |L3|BUSSUM5:inst7|inst8                                                                 ; out0             ;
+; |L3|BUSSUM5:inst7|inst9                                                                       ; |L3|BUSSUM5:inst7|inst9                                                                 ; out0             ;
+; |L3|BUSSUM5:inst7|inst10                                                                      ; |L3|BUSSUM5:inst7|inst10                                                                ; out0             ;
+; |L3|BusEnable:inst14|inst                                                                     ; |L3|BusEnable:inst14|inst                                                               ; out0             ;
+; |L3|BusEnable:inst14|inst13                                                                   ; |L3|BusEnable:inst14|inst13                                                             ; out0             ;
+; |L3|BusEnable:inst14|inst14                                                                   ; |L3|BusEnable:inst14|inst14                                                             ; out0             ;
+; |L3|Counter8:inst31|inst                                                                      ; |L3|Counter8:inst31|inst                                                                ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|134                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|134                                          ; regout           ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|131                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|131                                          ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|117                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|117                                          ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|122                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|122                                          ; regout           ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|120                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|120                                          ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|106                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|106                                          ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|111                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|111                                          ; regout           ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|109                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|109                                          ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|74                                                 ; |L3|Counter8:inst31|74163:inst2|f74163:sub|74                                           ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|34                                                 ; |L3|Counter8:inst31|74163:inst2|f74163:sub|34                                           ; regout           ;
+; |L3|BusEnable7:inst34|inst19                                                                  ; |L3|BusEnable7:inst34|inst19                                                            ; out0             ;
+; |L3|BusEnable7:inst34|inst                                                                    ; |L3|BusEnable7:inst34|inst                                                              ; out0             ;
+; |L3|BusEnable7:inst34|inst13                                                                  ; |L3|BusEnable7:inst34|inst13                                                            ; out0             ;
+; |L3|BusEnable7:inst34|inst14                                                                  ; |L3|BusEnable7:inst34|inst14                                                            ; out0             ;
+; |L3|BusEnable7:inst34|inst16                                                                  ; |L3|BusEnable7:inst34|inst16                                                            ; out0             ;
+; |L3|BUSSUM5:inst33|inst8                                                                      ; |L3|BUSSUM5:inst33|inst8                                                                ; out0             ;
+; |L3|BUSSUM5:inst33|inst9                                                                      ; |L3|BUSSUM5:inst33|inst9                                                                ; out0             ;
+; |L3|BUSSUM5:inst33|inst10                                                                     ; |L3|BUSSUM5:inst33|inst10                                                               ; out0             ;
+; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|ram_block1a4 ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|q_a[4] ; portadataout0    ;
+; |L3|BUSSUM2:inst12|inst5                                                                      ; |L3|BUSSUM2:inst12|inst5                                                                ; out0             ;
+; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[4]                                            ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[4]                                      ; regout           ;
+; |L3|BusEnable:inst27|inst13                                                                   ; |L3|BusEnable:inst27|inst13                                                             ; out0             ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                                                                                                                                           ;
-+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                         ; Output Port Name                                                                            ; Output Port Type ;
-+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
-; |L3|A[5]                                                                                          ; |L3|A[5]                                                                                    ; pin_out          ;
-; |L3|A[4]                                                                                          ; |L3|A[4]                                                                                    ; pin_out          ;
-; |L3|Data1[5]                                                                                      ; |L3|Data1[5]                                                                                ; pin_out          ;
-; |L3|Data1[4]                                                                                      ; |L3|Data1[4]                                                                                ; pin_out          ;
-; |L3|Data1[3]                                                                                      ; |L3|Data1[3]                                                                                ; pin_out          ;
-; |L3|Data1[0]                                                                                      ; |L3|Data1[0]                                                                                ; pin_out          ;
-; |L3|inst22                                                                                        ; |L3|inst22                                                                                  ; out0             ;
-; |L3|enable                                                                                        ; |L3|enable                                                                                  ; out              ;
-; |L3|ROM-RAM                                                                                       ; |L3|ROM-RAM                                                                                 ; out              ;
-; |L3|AutoInc                                                                                       ; |L3|AutoInc                                                                                 ; out              ;
-; |L3|Adres[7]                                                                                      ; |L3|Adres[7]                                                                                ; out              ;
-; |L3|Adres[6]                                                                                      ; |L3|Adres[6]                                                                                ; out              ;
-; |L3|Adres[5]                                                                                      ; |L3|Adres[5]                                                                                ; out              ;
-; |L3|Adres[4]                                                                                      ; |L3|Adres[4]                                                                                ; out              ;
-; |L3|Adres[3]                                                                                      ; |L3|Adres[3]                                                                                ; out              ;
-; |L3|Adres[2]                                                                                      ; |L3|Adres[2]                                                                                ; out              ;
-; |L3|Adres[1]                                                                                      ; |L3|Adres[1]                                                                                ; out              ;
-; |L3|Adres[0]                                                                                      ; |L3|Adres[0]                                                                                ; out              ;
-; |L3|inst13                                                                                        ; |L3|inst13                                                                                  ; out0             ;
-; |L3|RAM[5]                                                                                        ; |L3|RAM[5]                                                                                  ; pin_out          ;
-; |L3|Adr[7]                                                                                        ; |L3|Adr[7]                                                                                  ; pin_out          ;
-; |L3|Adr[6]                                                                                        ; |L3|Adr[6]                                                                                  ; pin_out          ;
-; |L3|Adr[5]                                                                                        ; |L3|Adr[5]                                                                                  ; pin_out          ;
-; |L3|AdA[7]                                                                                        ; |L3|AdA[7]                                                                                  ; pin_out          ;
-; |L3|AdA[6]                                                                                        ; |L3|AdA[6]                                                                                  ; pin_out          ;
-; |L3|AdA[5]                                                                                        ; |L3|AdA[5]                                                                                  ; pin_out          ;
-; |L3|AdA[4]                                                                                        ; |L3|AdA[4]                                                                                  ; pin_out          ;
-; |L3|AdB[7]                                                                                        ; |L3|AdB[7]                                                                                  ; pin_out          ;
-; |L3|AdB[6]                                                                                        ; |L3|AdB[6]                                                                                  ; pin_out          ;
-; |L3|AdB[5]                                                                                        ; |L3|AdB[5]                                                                                  ; pin_out          ;
-; |L3|AdB[0]                                                                                        ; |L3|AdB[0]                                                                                  ; pin_out          ;
-; |L3|OutData[5]                                                                                    ; |L3|OutData[5]                                                                              ; pin_out          ;
-; |L3|OutData[4]                                                                                    ; |L3|OutData[4]                                                                              ; pin_out          ;
-; |L3|SUMA[5]                                                                                       ; |L3|SUMA[5]                                                                                 ; pin_out          ;
-; |L3|SUMA[4]                                                                                       ; |L3|SUMA[4]                                                                                 ; pin_out          ;
-; |L3|B[5]                                                                                          ; |L3|B[5]                                                                                    ; pin_out          ;
-; |L3|B[4]                                                                                          ; |L3|B[4]                                                                                    ; pin_out          ;
-; |L3|B[0]                                                                                          ; |L3|B[0]                                                                                    ; pin_out          ;
-; |L3|Data2[5]                                                                                      ; |L3|Data2[5]                                                                                ; pin_out          ;
-; |L3|Data2[4]                                                                                      ; |L3|Data2[4]                                                                                ; pin_out          ;
-; |L3|Data2[0]                                                                                      ; |L3|Data2[0]                                                                                ; pin_out          ;
-; |L3|BusEnable:inst44|inst                                                                         ; |L3|BusEnable:inst44|inst                                                                   ; out0             ;
-; |L3|BusEnable:inst44|inst13                                                                       ; |L3|BusEnable:inst44|inst13                                                                 ; out0             ;
-; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[5]                                                ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[5]                                          ; regout           ;
-; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[4]                                                ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[4]                                          ; regout           ;
-; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[0]                                                ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[0]                                          ; regout           ;
-; |L3|BusEnable:inst28|inst17                                                                       ; |L3|BusEnable:inst28|inst17                                                                 ; out0             ;
-; |L3|BusEnable:inst28|inst                                                                         ; |L3|BusEnable:inst28|inst                                                                   ; out0             ;
-; |L3|BusEnable:inst28|inst13                                                                       ; |L3|BusEnable:inst28|inst13                                                                 ; out0             ;
-; |L3|BUSSUM2:inst29|inst5                                                                          ; |L3|BUSSUM2:inst29|inst5                                                                    ; out0             ;
-; |L3|BUSSUM2:inst29|inst6                                                                          ; |L3|BUSSUM2:inst29|inst6                                                                    ; out0             ;
-; |L3|BUSSUM2:inst26|inst5                                                                          ; |L3|BUSSUM2:inst26|inst5                                                                    ; out0             ;
-; |L3|BUSSUM2:inst26|inst6                                                                          ; |L3|BUSSUM2:inst26|inst6                                                                    ; out0             ;
-; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[7]                                                ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[7]                                          ; regout           ;
-; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[6]                                                ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[6]                                          ; regout           ;
-; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[5]                                                ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[5]                                          ; regout           ;
-; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[4]                                                ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[4]                                          ; regout           ;
-; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[0]                                                ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[0]                                          ; regout           ;
-; |L3|BusEnable7:inst5|inst19                                                                       ; |L3|BusEnable7:inst5|inst19                                                                 ; out0             ;
-; |L3|BusEnable7:inst5|inst                                                                         ; |L3|BusEnable7:inst5|inst                                                                   ; out0             ;
-; |L3|BusEnable7:inst5|inst13                                                                       ; |L3|BusEnable7:inst5|inst13                                                                 ; out0             ;
-; |L3|BusEnable7:inst5|inst14                                                                       ; |L3|BusEnable7:inst5|inst14                                                                 ; out0             ;
-; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[7]                                               ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[7]                                         ; regout           ;
-; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[6]                                               ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[6]                                         ; regout           ;
-; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[5]                                               ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[5]                                         ; regout           ;
-; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[4]                                               ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[4]                                         ; regout           ;
-; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[0]                                               ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[0]                                         ; regout           ;
-; |L3|BusEnable7:inst6|inst                                                                         ; |L3|BusEnable7:inst6|inst                                                                   ; out0             ;
-; |L3|BusEnable7:inst6|inst13                                                                       ; |L3|BusEnable7:inst6|inst13                                                                 ; out0             ;
-; |L3|BusEnable7:inst6|inst14                                                                       ; |L3|BusEnable7:inst6|inst14                                                                 ; out0             ;
-; |L3|BusEnable7:inst6|inst15                                                                       ; |L3|BusEnable7:inst6|inst15                                                                 ; out0             ;
-; |L3|BUSSUM5:inst8|inst8                                                                           ; |L3|BUSSUM5:inst8|inst8                                                                     ; out0             ;
-; |L3|BUSSUM5:inst8|inst9                                                                           ; |L3|BUSSUM5:inst8|inst9                                                                     ; out0             ;
-; |L3|BUSSUM5:inst8|inst10                                                                          ; |L3|BUSSUM5:inst8|inst10                                                                    ; out0             ;
-; |L3|BusEnable7:inst1|inst                                                                         ; |L3|BusEnable7:inst1|inst                                                                   ; out0             ;
-; |L3|BusEnable7:inst1|inst13                                                                       ; |L3|BusEnable7:inst1|inst13                                                                 ; out0             ;
-; |L3|BusEnable7:inst1|inst14                                                                       ; |L3|BusEnable7:inst1|inst14                                                                 ; out0             ;
-; |L3|BUSSUM5:inst7|inst8                                                                           ; |L3|BUSSUM5:inst7|inst8                                                                     ; out0             ;
-; |L3|BUSSUM5:inst7|inst9                                                                           ; |L3|BUSSUM5:inst7|inst9                                                                     ; out0             ;
-; |L3|BUSSUM5:inst7|inst10                                                                          ; |L3|BUSSUM5:inst7|inst10                                                                    ; out0             ;
-; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated|ram_block1a5 ; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated|q_a[5] ; portadataout0    ;
-; |L3|BusEnable:inst14|inst17                                                                       ; |L3|BusEnable:inst14|inst17                                                                 ; out0             ;
-; |L3|BusEnable:inst14|inst16                                                                       ; |L3|BusEnable:inst14|inst16                                                                 ; out0             ;
-; |L3|BusEnable:inst14|inst15                                                                       ; |L3|BusEnable:inst14|inst15                                                                 ; out0             ;
-; |L3|BusEnable:inst14|inst                                                                         ; |L3|BusEnable:inst14|inst                                                                   ; out0             ;
-; |L3|BusEnable:inst14|inst13                                                                       ; |L3|BusEnable:inst14|inst13                                                                 ; out0             ;
-; |L3|BusEnable:inst14|inst14                                                                       ; |L3|BusEnable:inst14|inst14                                                                 ; out0             ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|134                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|134                                              ; regout           ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|131                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|131                                              ; out0             ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|117                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|117                                              ; out0             ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|122                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|122                                              ; regout           ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|120                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|120                                              ; out0             ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|106                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|106                                              ; out0             ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|111                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|111                                              ; regout           ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|109                                                    ; |L3|Counter8:inst31|74163:inst2|f74163:sub|109                                              ; out0             ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|74                                                     ; |L3|Counter8:inst31|74163:inst2|f74163:sub|74                                               ; out0             ;
-; |L3|Counter8:inst31|74163:inst2|f74163:sub|34                                                     ; |L3|Counter8:inst31|74163:inst2|f74163:sub|34                                               ; regout           ;
-; |L3|BusEnable7:inst34|inst19                                                                      ; |L3|BusEnable7:inst34|inst19                                                                ; out0             ;
-; |L3|BusEnable7:inst34|inst18                                                                      ; |L3|BusEnable7:inst34|inst18                                                                ; out0             ;
-; |L3|BusEnable7:inst34|inst                                                                        ; |L3|BusEnable7:inst34|inst                                                                  ; out0             ;
-; |L3|BusEnable7:inst34|inst13                                                                      ; |L3|BusEnable7:inst34|inst13                                                                ; out0             ;
-; |L3|BusEnable7:inst34|inst14                                                                      ; |L3|BusEnable7:inst34|inst14                                                                ; out0             ;
-; |L3|BusEnable7:inst34|inst15                                                                      ; |L3|BusEnable7:inst34|inst15                                                                ; out0             ;
-; |L3|BusEnable7:inst34|inst16                                                                      ; |L3|BusEnable7:inst34|inst16                                                                ; out0             ;
-; |L3|BusEnable7:inst34|inst17                                                                      ; |L3|BusEnable7:inst34|inst17                                                                ; out0             ;
-; |L3|BUSSUM5:inst33|inst7                                                                          ; |L3|BUSSUM5:inst33|inst7                                                                    ; out0             ;
-; |L3|BUSSUM5:inst33|inst8                                                                          ; |L3|BUSSUM5:inst33|inst8                                                                    ; out0             ;
-; |L3|BUSSUM5:inst33|inst9                                                                          ; |L3|BUSSUM5:inst33|inst9                                                                    ; out0             ;
-; |L3|BUSSUM5:inst33|inst10                                                                         ; |L3|BUSSUM5:inst33|inst10                                                                   ; out0             ;
-; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|ram_block1a4     ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|q_a[4]     ; portadataout0    ;
-; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|ram_block1a5     ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|q_a[5]     ; portadataout0    ;
-; |L3|BUSSUM2:inst12|inst5                                                                          ; |L3|BUSSUM2:inst12|inst5                                                                    ; out0             ;
-; |L3|BUSSUM2:inst12|inst6                                                                          ; |L3|BUSSUM2:inst12|inst6                                                                    ; out0             ;
-; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[5]                                                ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[5]                                          ; regout           ;
-; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[4]                                                ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[4]                                          ; regout           ;
-; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[3]                                                ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[3]                                          ; regout           ;
-; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[0]                                                ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[0]                                          ; regout           ;
-; |L3|BusEnable:inst27|inst                                                                         ; |L3|BusEnable:inst27|inst                                                                   ; out0             ;
-; |L3|BusEnable:inst27|inst13                                                                       ; |L3|BusEnable:inst27|inst13                                                                 ; out0             ;
-+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                   ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                     ; Output Port Name                                                                        ; Output Port Type ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
+; |L3|A[4]                                                                                      ; |L3|A[4]                                                                                ; pin_out          ;
+; |L3|Data1[4]                                                                                  ; |L3|Data1[4]                                                                            ; pin_out          ;
+; |L3|Data1[3]                                                                                  ; |L3|Data1[3]                                                                            ; pin_out          ;
+; |L3|inst22                                                                                    ; |L3|inst22                                                                              ; out0             ;
+; |L3|enable                                                                                    ; |L3|enable                                                                              ; out              ;
+; |L3|ROM-RAM                                                                                   ; |L3|ROM-RAM                                                                             ; out              ;
+; |L3|AutoInc                                                                                   ; |L3|AutoInc                                                                             ; out              ;
+; |L3|Adres[7]                                                                                  ; |L3|Adres[7]                                                                            ; out              ;
+; |L3|Adres[6]                                                                                  ; |L3|Adres[6]                                                                            ; out              ;
+; |L3|Adres[5]                                                                                  ; |L3|Adres[5]                                                                            ; out              ;
+; |L3|Adres[3]                                                                                  ; |L3|Adres[3]                                                                            ; out              ;
+; |L3|Adr[7]                                                                                    ; |L3|Adr[7]                                                                              ; pin_out          ;
+; |L3|Adr[6]                                                                                    ; |L3|Adr[6]                                                                              ; pin_out          ;
+; |L3|Adr[5]                                                                                    ; |L3|Adr[5]                                                                              ; pin_out          ;
+; |L3|AdA[7]                                                                                    ; |L3|AdA[7]                                                                              ; pin_out          ;
+; |L3|AdA[6]                                                                                    ; |L3|AdA[6]                                                                              ; pin_out          ;
+; |L3|AdA[5]                                                                                    ; |L3|AdA[5]                                                                              ; pin_out          ;
+; |L3|AdA[4]                                                                                    ; |L3|AdA[4]                                                                              ; pin_out          ;
+; |L3|AdA[0]                                                                                    ; |L3|AdA[0]                                                                              ; pin_out          ;
+; |L3|AdB[7]                                                                                    ; |L3|AdB[7]                                                                              ; pin_out          ;
+; |L3|AdB[6]                                                                                    ; |L3|AdB[6]                                                                              ; pin_out          ;
+; |L3|AdB[5]                                                                                    ; |L3|AdB[5]                                                                              ; pin_out          ;
+; |L3|AdB[4]                                                                                    ; |L3|AdB[4]                                                                              ; pin_out          ;
+; |L3|OutData[4]                                                                                ; |L3|OutData[4]                                                                          ; pin_out          ;
+; |L3|SUMA[4]                                                                                   ; |L3|SUMA[4]                                                                             ; pin_out          ;
+; |L3|B[4]                                                                                      ; |L3|B[4]                                                                                ; pin_out          ;
+; |L3|Data2[4]                                                                                  ; |L3|Data2[4]                                                                            ; pin_out          ;
+; |L3|Data2[3]                                                                                  ; |L3|Data2[3]                                                                            ; pin_out          ;
+; |L3|BusEnable:inst44|inst13                                                                   ; |L3|BusEnable:inst44|inst13                                                             ; out0             ;
+; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[4]                                            ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[4]                                      ; regout           ;
+; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[3]                                            ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component|dffs[3]                                      ; regout           ;
+; |L3|BusEnable:inst28|inst13                                                                   ; |L3|BusEnable:inst28|inst13                                                             ; out0             ;
+; |L3|BUSSUM2:inst29|inst5                                                                      ; |L3|BUSSUM2:inst29|inst5                                                                ; out0             ;
+; |L3|BUSSUM2:inst26|inst5                                                                      ; |L3|BUSSUM2:inst26|inst5                                                                ; out0             ;
+; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[7]                                            ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[7]                                      ; regout           ;
+; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[6]                                            ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[6]                                      ; regout           ;
+; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[5]                                            ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[5]                                      ; regout           ;
+; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[4]                                            ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[4]                                      ; regout           ;
+; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[3]                                            ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[3]                                      ; regout           ;
+; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[0]                                            ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component|dffs[0]                                      ; regout           ;
+; |L3|BusEnable7:inst5|inst                                                                     ; |L3|BusEnable7:inst5|inst                                                               ; out0             ;
+; |L3|BusEnable7:inst5|inst13                                                                   ; |L3|BusEnable7:inst5|inst13                                                             ; out0             ;
+; |L3|BusEnable7:inst5|inst14                                                                   ; |L3|BusEnable7:inst5|inst14                                                             ; out0             ;
+; |L3|BusEnable7:inst5|inst15                                                                   ; |L3|BusEnable7:inst5|inst15                                                             ; out0             ;
+; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[7]                                           ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[7]                                     ; regout           ;
+; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[6]                                           ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[6]                                     ; regout           ;
+; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[5]                                           ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[5]                                     ; regout           ;
+; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[4]                                           ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[4]                                     ; regout           ;
+; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[3]                                           ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[3]                                     ; regout           ;
+; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[0]                                           ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component|dffs[0]                                     ; regout           ;
+; |L3|BusEnable7:inst6|inst19                                                                   ; |L3|BusEnable7:inst6|inst19                                                             ; out0             ;
+; |L3|BusEnable7:inst6|inst                                                                     ; |L3|BusEnable7:inst6|inst                                                               ; out0             ;
+; |L3|BusEnable7:inst6|inst13                                                                   ; |L3|BusEnable7:inst6|inst13                                                             ; out0             ;
+; |L3|BusEnable7:inst6|inst14                                                                   ; |L3|BusEnable7:inst6|inst14                                                             ; out0             ;
+; |L3|BusEnable7:inst6|inst15                                                                   ; |L3|BusEnable7:inst6|inst15                                                             ; out0             ;
+; |L3|BUSSUM5:inst8|inst7                                                                       ; |L3|BUSSUM5:inst8|inst7                                                                 ; out0             ;
+; |L3|BUSSUM5:inst8|inst8                                                                       ; |L3|BUSSUM5:inst8|inst8                                                                 ; out0             ;
+; |L3|BUSSUM5:inst8|inst9                                                                       ; |L3|BUSSUM5:inst8|inst9                                                                 ; out0             ;
+; |L3|BUSSUM5:inst8|inst10                                                                      ; |L3|BUSSUM5:inst8|inst10                                                                ; out0             ;
+; |L3|BusEnable7:inst1|inst                                                                     ; |L3|BusEnable7:inst1|inst                                                               ; out0             ;
+; |L3|BusEnable7:inst1|inst13                                                                   ; |L3|BusEnable7:inst1|inst13                                                             ; out0             ;
+; |L3|BusEnable7:inst1|inst14                                                                   ; |L3|BusEnable7:inst1|inst14                                                             ; out0             ;
+; |L3|BUSSUM5:inst7|inst8                                                                       ; |L3|BUSSUM5:inst7|inst8                                                                 ; out0             ;
+; |L3|BUSSUM5:inst7|inst9                                                                       ; |L3|BUSSUM5:inst7|inst9                                                                 ; out0             ;
+; |L3|BUSSUM5:inst7|inst10                                                                      ; |L3|BUSSUM5:inst7|inst10                                                                ; out0             ;
+; |L3|BusEnable:inst14|inst                                                                     ; |L3|BusEnable:inst14|inst                                                               ; out0             ;
+; |L3|BusEnable:inst14|inst13                                                                   ; |L3|BusEnable:inst14|inst13                                                             ; out0             ;
+; |L3|BusEnable:inst14|inst14                                                                   ; |L3|BusEnable:inst14|inst14                                                             ; out0             ;
+; |L3|Counter8:inst31|inst                                                                      ; |L3|Counter8:inst31|inst                                                                ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|134                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|134                                          ; regout           ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|131                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|131                                          ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|117                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|117                                          ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|122                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|122                                          ; regout           ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|120                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|120                                          ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|106                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|106                                          ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|111                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|111                                          ; regout           ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|109                                                ; |L3|Counter8:inst31|74163:inst2|f74163:sub|109                                          ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|74                                                 ; |L3|Counter8:inst31|74163:inst2|f74163:sub|74                                           ; out0             ;
+; |L3|Counter8:inst31|74163:inst2|f74163:sub|34                                                 ; |L3|Counter8:inst31|74163:inst2|f74163:sub|34                                           ; regout           ;
+; |L3|Counter8:inst31|74163:inst1|f74163:sub|134                                                ; |L3|Counter8:inst31|74163:inst1|f74163:sub|134                                          ; regout           ;
+; |L3|BusEnable7:inst34|inst19                                                                  ; |L3|BusEnable7:inst34|inst19                                                            ; out0             ;
+; |L3|BusEnable7:inst34|inst                                                                    ; |L3|BusEnable7:inst34|inst                                                              ; out0             ;
+; |L3|BusEnable7:inst34|inst13                                                                  ; |L3|BusEnable7:inst34|inst13                                                            ; out0             ;
+; |L3|BusEnable7:inst34|inst14                                                                  ; |L3|BusEnable7:inst34|inst14                                                            ; out0             ;
+; |L3|BusEnable7:inst34|inst16                                                                  ; |L3|BusEnable7:inst34|inst16                                                            ; out0             ;
+; |L3|BUSSUM5:inst33|inst6                                                                      ; |L3|BUSSUM5:inst33|inst6                                                                ; out0             ;
+; |L3|BUSSUM5:inst33|inst8                                                                      ; |L3|BUSSUM5:inst33|inst8                                                                ; out0             ;
+; |L3|BUSSUM5:inst33|inst9                                                                      ; |L3|BUSSUM5:inst33|inst9                                                                ; out0             ;
+; |L3|BUSSUM5:inst33|inst10                                                                     ; |L3|BUSSUM5:inst33|inst10                                                               ; out0             ;
+; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|ram_block1a3 ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|q_a[3] ; portadataout0    ;
+; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|ram_block1a4 ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated|q_a[4] ; portadataout0    ;
+; |L3|BUSSUM2:inst12|inst4                                                                      ; |L3|BUSSUM2:inst12|inst4                                                                ; out0             ;
+; |L3|BUSSUM2:inst12|inst5                                                                      ; |L3|BUSSUM2:inst12|inst5                                                                ; out0             ;
+; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[4]                                            ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[4]                                      ; regout           ;
+; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[3]                                            ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[3]                                      ; regout           ;
+; |L3|BusEnable:inst27|inst13                                                                   ; |L3|BusEnable:inst27|inst13                                                             ; out0             ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -545,7 +531,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Mon Oct 02 12:22:26 2017
+    Info: Processing started: Tue Oct 03 21:24:55 2017
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off L3 -c L3
 Info: Using vector source file "E:/modLab3/L3.vwf"
 Info: Overwriting simulation input file with simulation results
@@ -553,12 +539,12 @@ Info: Overwriting simulation input file with simulation results
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      58.39 %
-Info: Number of transitions in simulation is 3728
+Info: Simulation coverage is      66.67 %
+Info: Number of transitions in simulation is 3783
 Info: Vector file L3.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 162 megabytes
-    Info: Processing ended: Mon Oct 02 12:22:27 2017
+    Info: Processing ended: Tue Oct 03 21:24:56 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

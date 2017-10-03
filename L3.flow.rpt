@@ -1,5 +1,5 @@
 Flow report for L3
-Mon Oct 02 12:20:41 2017
+Tue Oct 03 21:24:38 2017
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -38,13 +38,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------+
 ; Flow Summary                                                       ;
 +--------------------------+-----------------------------------------+
-; Flow Status              ; Successful - Mon Oct 02 12:20:41 2017   ;
+; Flow Status              ; Successful - Tue Oct 03 21:24:38 2017   ;
 ; Quartus II Version       ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name            ; L3                                      ;
 ; Top-level Entity Name    ; L3                                      ;
 ; Family                   ; Stratix                                 ;
 ; Met timing requirements  ; N/A                                     ;
-; Total logic elements     ; 124                                     ;
+; Total logic elements     ; 132                                     ;
 ; Total pins               ; 90                                      ;
 ; Total virtual pins       ; 0                                       ;
 ; Total memory bits        ; 3,072                                   ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/02/2017 12:20:39 ;
+; Start date & time ; 10/03/2017 21:24:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; L3                  ;
 +-------------------+---------------------+
@@ -70,7 +70,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 264390077223549.150693603801792 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 264390077223549.150705507308928 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                        ; LPM_ROM                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                        ; LPM_ROM                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                        ; LPM_RAM_DQ                      ; --            ; --          ; --             ;
@@ -137,8 +137,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 267 MB              ; 00:00:03                           ;
-; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:03                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 269 MB              ; 00:00:04                           ;
+; Total                ; 00:00:06     ; --                      ; --                  ; 00:00:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

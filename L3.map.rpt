@@ -1,5 +1,5 @@
 Analysis & Synthesis report for L3
-Mon Oct 02 12:20:41 2017
+Tue Oct 03 21:24:38 2017
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -53,12 +53,12 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Oct 02 12:20:41 2017   ;
+; Analysis & Synthesis Status ; Successful - Tue Oct 03 21:24:38 2017   ;
 ; Quartus II Version          ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name               ; L3                                      ;
 ; Top-level Entity Name       ; L3                                      ;
 ; Family                      ; Stratix                                 ;
-; Total logic elements        ; 124                                     ;
+; Total logic elements        ; 132                                     ;
 ; Total pins                  ; 90                                      ;
 ; Total virtual pins          ; 0                                       ;
 ; Total memory bits           ; 3,072                                   ;
@@ -184,40 +184,40 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+---------------------------------------+-------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Total logic elements                        ; 124   ;
-;     -- Combinational with no register       ; 84    ;
-;     -- Register only                        ; 28    ;
-;     -- Combinational with a register        ; 12    ;
-;                                             ;       ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 43    ;
-;     -- 3 input functions                    ; 13    ;
-;     -- 2 input functions                    ; 37    ;
-;     -- 1 input functions                    ; 3     ;
-;     -- 0 input functions                    ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 115   ;
-;     -- arithmetic mode                      ; 9     ;
-;     -- qfbk mode                            ; 0     ;
-;     -- register cascade mode                ; 0     ;
-;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 40    ;
-; Total logic cells in carry chains           ; 12    ;
-; I/O pins                                    ; 90    ;
-; Total memory bits                           ; 3072  ;
-; Maximum fan-out node                        ; C     ;
-; Maximum fan-out                             ; 38    ;
-; Total fan-out                               ; 582   ;
-; Average fan-out                             ; 2.58  ;
-+---------------------------------------------+-------+
++------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                    ;
++---------------------------------------------+--------------------------------------------------+
+; Resource                                    ; Usage                                            ;
++---------------------------------------------+--------------------------------------------------+
+; Total logic elements                        ; 132                                              ;
+;     -- Combinational with no register       ; 92                                               ;
+;     -- Register only                        ; 28                                               ;
+;     -- Combinational with a register        ; 12                                               ;
+;                                             ;                                                  ;
+; Logic element usage by number of LUT inputs ;                                                  ;
+;     -- 4 input functions                    ; 64                                               ;
+;     -- 3 input functions                    ; 19                                               ;
+;     -- 2 input functions                    ; 19                                               ;
+;     -- 1 input functions                    ; 2                                                ;
+;     -- 0 input functions                    ; 0                                                ;
+;                                             ;                                                  ;
+; Logic elements by mode                      ;                                                  ;
+;     -- normal mode                          ; 126                                              ;
+;     -- arithmetic mode                      ; 6                                                ;
+;     -- qfbk mode                            ; 0                                                ;
+;     -- register cascade mode                ; 0                                                ;
+;     -- synchronous clear/load mode          ; 0                                                ;
+;     -- asynchronous clear/load mode         ; 0                                                ;
+;                                             ;                                                  ;
+; Total registers                             ; 40                                               ;
+; Total logic cells in carry chains           ; 8                                                ;
+; I/O pins                                    ; 90                                               ;
+; Total memory bits                           ; 3072                                             ;
+; Maximum fan-out node                        ; DivergentBlock:inst17|74163:inst1|f74163:sub|111 ;
+; Maximum fan-out                             ; 52                                               ;
+; Total fan-out                               ; 647                                              ;
+; Average fan-out                             ; 2.76                                             ;
++---------------------------------------------+--------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -225,31 +225,31 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; Logic Cells ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                  ; Library Name ;
 +-------------------------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------+--------------+
-; |L3                                       ; 124 (9)     ; 40           ; 3072        ; 0            ; 0       ; 0         ; 0         ; 90   ; 0            ; 84 (9)       ; 28 (0)            ; 12 (0)           ; 12 (0)          ; 0 (0)      ; |L3                                                                                  ; work         ;
+; |L3                                       ; 132 (13)    ; 40           ; 3072        ; 0            ; 0       ; 0         ; 0         ; 90   ; 0            ; 92 (13)      ; 28 (0)            ; 12 (0)           ; 8 (0)           ; 0 (0)      ; |L3                                                                                  ; work         ;
 ;    |BUSSUM2:inst12|                       ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BUSSUM2:inst12                                                                   ; work         ;
-;    |BUSSUM2:inst26|                       ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BUSSUM2:inst26                                                                   ;              ;
-;    |BUSSUM2:inst29|                       ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BUSSUM2:inst29                                                                   ;              ;
+;    |BUSSUM2:inst26|                       ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BUSSUM2:inst26                                                                   ; work         ;
+;    |BUSSUM2:inst29|                       ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BUSSUM2:inst29                                                                   ; work         ;
 ;    |BUSSUM5:inst33|                       ; 8 (8)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BUSSUM5:inst33                                                                   ; work         ;
 ;    |BUSSUM5:inst7|                        ; 8 (8)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BUSSUM5:inst7                                                                    ; work         ;
-;    |BusEnable7:inst5|                     ; 8 (8)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BusEnable7:inst5                                                                 ; work         ;
-;    |BusEnable7:inst6|                     ; 8 (8)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BusEnable7:inst6                                                                 ; work         ;
+;    |BusEnable7:inst5|                     ; 8 (8)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BusEnable7:inst5                                                                 ;              ;
+;    |BusEnable7:inst6|                     ; 8 (8)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BusEnable7:inst6                                                                 ;              ;
 ;    |BusEnable:inst27|                     ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BusEnable:inst27                                                                 ; work         ;
-;    |BusEnable:inst28|                     ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BusEnable:inst28                                                                 ;              ;
+;    |BusEnable:inst28|                     ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BusEnable:inst28                                                                 ; work         ;
 ;    |Counter8:inst31|                      ; 9 (1)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 8 (0)            ; 8 (0)           ; 0 (0)      ; |L3|Counter8:inst31                                                                  ;              ;
-;       |74163:inst1|                       ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |L3|Counter8:inst31|74163:inst1                                                      ;              ;
-;          |f74163:sub|                     ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |L3|Counter8:inst31|74163:inst1|f74163:sub                                           ;              ;
-;       |74163:inst2|                       ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |L3|Counter8:inst31|74163:inst2                                                      ;              ;
-;          |f74163:sub|                     ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |L3|Counter8:inst31|74163:inst2|f74163:sub                                           ;              ;
-;    |DivergentBlock:inst17|                ; 16 (0)      ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 12 (0)       ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |L3|DivergentBlock:inst17                                                            ;              ;
+;       |74163:inst1|                       ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |L3|Counter8:inst31|74163:inst1                                                      ; work         ;
+;          |f74163:sub|                     ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |L3|Counter8:inst31|74163:inst1|f74163:sub                                           ; work         ;
+;       |74163:inst2|                       ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |L3|Counter8:inst31|74163:inst2                                                      ; work         ;
+;          |f74163:sub|                     ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |L3|Counter8:inst31|74163:inst2|f74163:sub                                           ; work         ;
+;    |DivergentBlock:inst17|                ; 20 (0)      ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |L3|DivergentBlock:inst17                                                            ;              ;
 ;       |16dmux:inst|                       ; 12 (12)     ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|DivergentBlock:inst17|16dmux:inst                                                ; work         ;
-;       |74163:inst1|                       ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |L3|DivergentBlock:inst17|74163:inst1                                                ; work         ;
-;          |f74163:sub|                     ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |L3|DivergentBlock:inst17|74163:inst1|f74163:sub                                     ; work         ;
-;    |lpm_dff1:inst2|                       ; 6 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff1:inst2                                                                   ;              ;
+;       |74163:inst1|                       ; 8 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |L3|DivergentBlock:inst17|74163:inst1                                                ; work         ;
+;          |f74163:sub|                     ; 8 (8)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |L3|DivergentBlock:inst17|74163:inst1|f74163:sub                                     ; work         ;
+;    |lpm_dff1:inst2|                       ; 6 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff1:inst2                                                                   ; work         ;
 ;       |lpm_ff:lpm_ff_component|           ; 6 (6)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component                                           ; work         ;
 ;    |lpm_dff1:inst4|                       ; 6 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff1:inst4                                                                   ; work         ;
 ;       |lpm_ff:lpm_ff_component|           ; 6 (6)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component                                           ; work         ;
-;    |lpm_dff2:inst10|                      ; 8 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff2:inst10                                                                  ; work         ;
-;       |lpm_ff:lpm_ff_component|           ; 8 (8)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component                                          ; work         ;
+;    |lpm_dff2:inst10|                      ; 8 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff2:inst10                                                                  ;              ;
+;       |lpm_ff:lpm_ff_component|           ; 8 (8)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component                                          ;              ;
 ;    |lpm_dff2:inst9|                       ; 8 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff2:inst9                                                                   ;              ;
 ;       |lpm_ff:lpm_ff_component|           ; 8 (8)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component                                           ;              ;
 ;    |lpm_ram_dq2:inst3|                    ; 0 (0)       ; 0            ; 1536        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_ram_dq2:inst3                                                                ; work         ;
@@ -578,7 +578,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Mon Oct 02 12:20:38 2017
+    Info: Processing started: Tue Oct 03 21:24:32 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off L3 -c L3
 Info: Found 1 design units, including 1 entities, in source file divergentblock.bdf
     Info: Found entity 1: DivergentBlock
@@ -633,6 +633,7 @@ Info: Found 2 design units, including 1 entities, in source file lpm_dff2.vhd
     Info: Found entity 1: lpm_dff2
 Info: Elaborating entity "L3" for the top level hierarchy
 Warning: Block or symbol "BUSSUM2" of instance "inst29" overlaps another block or symbol
+Warning: Block or symbol "BusEnable7" of instance "inst5" overlaps another block or symbol
 Info: Elaborating entity "DivergentBlock" for hierarchy "DivergentBlock:inst17"
 Info: Elaborating entity "16dmux" for hierarchy "DivergentBlock:inst17|16dmux:inst"
 Info: Elaborated megafunction instantiation "DivergentBlock:inst17|16dmux:inst"
@@ -668,6 +669,7 @@ Info: Instantiated megafunction "lpm_rom2:inst|altsyncram:altsyncram_component" 
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_mk21.tdf
     Info: Found entity 1: altsyncram_mk21
 Info: Elaborating entity "altsyncram_mk21" for hierarchy "lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated"
+Warning: Byte addressed memory initialization file "L3.hex" was read in the word-addressed format
 Info: Elaborating entity "BUSSUM5" for hierarchy "BUSSUM5:inst33"
 Info: Elaborating entity "BusEnable7" for hierarchy "BusEnable7:inst34"
 Info: Elaborating entity "Counter8" for hierarchy "Counter8:inst31"
@@ -704,16 +706,25 @@ Info: Instantiated megafunction "lpm_dff2:inst10|lpm_ff:lpm_ff_component" with t
     Info: Parameter "lpm_width" = "8"
 Warning: Clock multiplexers are found and protected
     Warning: Found clock multiplexer inst24~synth
+    Warning: Found clock multiplexer inst23~synth
 Info: Converted 3 single input CARRY primitives to CARRY_SUM primitives
-Info: Implemented 226 device resources after synthesis - the final resource count might be different
+Warning: Ignored 2 CARRY_SUM primitives
+    Warning: Ignored 2 CARRY_SUM primitive(s) -- cannot place fan-out logic in single logic cell
+        Warning: Can't place logic fed by CARRY_SUM primitive "DivergentBlock:inst17|74163:inst1|f74163:sub|107~0" into a single logic cell
+            Warning: Node "DivergentBlock:inst17|74163:inst1|f74163:sub|117" of type LUT
+            Warning: Node "DivergentBlock:inst17|74163:inst1|f74163:sub|120" of type LUT
+        Warning: Can't place logic fed by CARRY_SUM primitive "DivergentBlock:inst17|74163:inst1|f74163:sub|74~0" into a single logic cell
+            Warning: Node "DivergentBlock:inst17|74163:inst1|f74163:sub|106" of type LUT
+            Warning: Node "DivergentBlock:inst17|74163:inst1|f74163:sub|109" of type LUT
+Info: Implemented 234 device resources after synthesis - the final resource count might be different
     Info: Implemented 12 input pins
     Info: Implemented 78 output pins
-    Info: Implemented 124 logic cells
+    Info: Implemented 132 logic cells
     Info: Implemented 12 RAM segments
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 267 megabytes
-    Info: Processing ended: Mon Oct 02 12:20:41 2017
-    Info: Elapsed time: 00:00:03
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 269 megabytes
+    Info: Processing ended: Tue Oct 03 21:24:38 2017
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:04
 
 
