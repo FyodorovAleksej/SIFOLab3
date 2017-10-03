@@ -22,7 +22,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.3"))
 (pin
 	(input)
-	(rect 104 104 272 120)
+	(rect 8 104 176 120)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "C" (rect 5 0 13 12)(font "Arial" ))
 	(pt 168 8)
@@ -351,10 +351,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 304 112)
-	(pt 272 112)
-)
-(connector
 	(pt 424 168)
 	(pt 480 168)
 )
@@ -506,6 +502,10 @@ applicable agreement for further details.
 (connector
 	(pt 568 72)
 	(pt 584 72)
+)
+(connector
+	(pt 176 112)
+	(pt 304 112)
 )
 (junction (pt 432 216))
 (junction (pt 480 288))
