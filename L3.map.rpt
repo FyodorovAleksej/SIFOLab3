@@ -1,5 +1,5 @@
 Analysis & Synthesis report for L3
-Fri Sep 29 20:19:27 2017
+Mon Oct 02 12:20:41 2017
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -20,10 +20,14 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
  12. Parameter Settings for User Entity Instance: DivergentBlock:inst17|74163:inst1
  13. Parameter Settings for User Entity Instance: lpm_dff1:inst4|lpm_ff:lpm_ff_component
  14. Parameter Settings for User Entity Instance: lpm_rom2:inst|altsyncram:altsyncram_component
- 15. Parameter Settings for User Entity Instance: lpm_ram_dq2:inst3|altsyncram:altsyncram_component
- 16. Parameter Settings for User Entity Instance: lpm_dff1:inst2|lpm_ff:lpm_ff_component
- 17. altsyncram Parameter Settings by Entity Instance
- 18. Analysis & Synthesis Messages
+ 15. Parameter Settings for User Entity Instance: Counter8:inst31|74163:inst1
+ 16. Parameter Settings for User Entity Instance: Counter8:inst31|74163:inst2
+ 17. Parameter Settings for User Entity Instance: lpm_ram_dq2:inst3|altsyncram:altsyncram_component
+ 18. Parameter Settings for User Entity Instance: lpm_dff2:inst10|lpm_ff:lpm_ff_component
+ 19. Parameter Settings for User Entity Instance: lpm_dff2:inst9|lpm_ff:lpm_ff_component
+ 20. Parameter Settings for User Entity Instance: lpm_dff1:inst2|lpm_ff:lpm_ff_component
+ 21. altsyncram Parameter Settings by Entity Instance
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -49,13 +53,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Sep 29 20:19:27 2017   ;
+; Analysis & Synthesis Status ; Successful - Mon Oct 02 12:20:41 2017   ;
 ; Quartus II Version          ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name               ; L3                                      ;
 ; Top-level Entity Name       ; L3                                      ;
 ; Family                      ; Stratix                                 ;
-; Total logic elements        ; 50                                      ;
-; Total pins                  ; 42                                      ;
+; Total logic elements        ; 124                                     ;
+; Total pins                  ; 90                                      ;
 ; Total virtual pins          ; 0                                       ;
 ; Total memory bits           ; 3,072                                   ;
 ; DSP block 9-bit elements    ; 0                                       ;
@@ -157,22 +161,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+---------------------------------------+-------------------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                ;
 +----------------------------------+-----------------+---------------------------------------+-------------------------------------------------------------+
-; RAM.hex                          ; yes             ; User Hexadecimal (Intel-Format) File  ; E:/quar2/RAM.hex                                            ;
-; DivergentBlock.bdf               ; yes             ; User Block Diagram/Schematic File     ; E:/quar2/DivergentBlock.bdf                                 ;
-; BusEnable.bdf                    ; yes             ; User Block Diagram/Schematic File     ; E:/quar2/BusEnable.bdf                                      ;
-; L3.bdf                           ; yes             ; User Block Diagram/Schematic File     ; E:/quar2/L3.bdf                                             ;
-; lpm_dff1.vhd                     ; yes             ; User Wizard-Generated File            ; E:/quar2/lpm_dff1.vhd                                       ;
-; lpm_ram_dq2.vhd                  ; yes             ; User Wizard-Generated File            ; E:/quar2/lpm_ram_dq2.vhd                                    ;
-; lpm_rom2.vhd                     ; yes             ; User Wizard-Generated File            ; E:/quar2/lpm_rom2.vhd                                       ;
-; L3.hex                           ; yes             ; User Hexadecimal (Intel-Format) File  ; E:/quar2/L3.hex                                             ;
-; BUSSUM2.bdf                      ; yes             ; User Block Diagram/Schematic File     ; E:/quar2/BUSSUM2.bdf                                        ;
+; RAM.hex                          ; yes             ; User Hexadecimal (Intel-Format) File  ; E:/modLab3/RAM.hex                                          ;
+; DivergentBlock.bdf               ; yes             ; User Block Diagram/Schematic File     ; E:/modLab3/DivergentBlock.bdf                               ;
+; BusEnable.bdf                    ; yes             ; User Block Diagram/Schematic File     ; E:/modLab3/BusEnable.bdf                                    ;
+; L3.bdf                           ; yes             ; User Block Diagram/Schematic File     ; E:/modLab3/L3.bdf                                           ;
+; lpm_dff1.vhd                     ; yes             ; User Wizard-Generated File            ; E:/modLab3/lpm_dff1.vhd                                     ;
+; lpm_ram_dq2.vhd                  ; yes             ; User Wizard-Generated File            ; E:/modLab3/lpm_ram_dq2.vhd                                  ;
+; lpm_rom2.vhd                     ; yes             ; User Wizard-Generated File            ; E:/modLab3/lpm_rom2.vhd                                     ;
+; L3.hex                           ; yes             ; User Hexadecimal (Intel-Format) File  ; E:/modLab3/L3.hex                                           ;
+; BUSSUM2.bdf                      ; yes             ; User Block Diagram/Schematic File     ; E:/modLab3/BUSSUM2.bdf                                      ;
+; Counter8.bdf                     ; yes             ; User Block Diagram/Schematic File     ; E:/modLab3/Counter8.bdf                                     ;
+; BUSSUM5.bdf                      ; yes             ; User Block Diagram/Schematic File     ; E:/modLab3/BUSSUM5.bdf                                      ;
+; BusEnable7.bdf                   ; yes             ; User Block Diagram/Schematic File     ; E:/modLab3/BusEnable7.bdf                                   ;
+; lpm_dff2.vhd                     ; yes             ; User Wizard-Generated File            ; E:/modLab3/lpm_dff2.vhd                                     ;
 ; 16dmux.bdf                       ; yes             ; Megafunction                          ; c:/altera/91/quartus/libraries/others/maxplus2/16dmux.bdf   ;
 ; 74163.tdf                        ; yes             ; Megafunction                          ; c:/altera/91/quartus/libraries/others/maxplus2/74163.tdf    ;
 ; f74163.bdf                       ; yes             ; Megafunction                          ; c:/altera/91/quartus/libraries/others/maxplus2/f74163.bdf   ;
 ; lpm_ff.tdf                       ; yes             ; Megafunction                          ; c:/altera/91/quartus/libraries/megafunctions/lpm_ff.tdf     ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                          ; c:/altera/91/quartus/libraries/megafunctions/altsyncram.tdf ;
-; db/altsyncram_mk21.tdf           ; yes             ; Auto-Generated Megafunction           ; E:/quar2/db/altsyncram_mk21.tdf                             ;
-; db/altsyncram_p0c1.tdf           ; yes             ; Auto-Generated Megafunction           ; E:/quar2/db/altsyncram_p0c1.tdf                             ;
+; db/altsyncram_mk21.tdf           ; yes             ; Auto-Generated Megafunction           ; E:/modLab3/db/altsyncram_mk21.tdf                           ;
+; db/altsyncram_p0c1.tdf           ; yes             ; Auto-Generated Megafunction           ; E:/modLab3/db/altsyncram_p0c1.tdf                           ;
 +----------------------------------+-----------------+---------------------------------------+-------------------------------------------------------------+
 
 
@@ -181,34 +189,34 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 50    ;
-;     -- Combinational with no register       ; 34    ;
-;     -- Register only                        ; 12    ;
-;     -- Combinational with a register        ; 4     ;
+; Total logic elements                        ; 124   ;
+;     -- Combinational with no register       ; 84    ;
+;     -- Register only                        ; 28    ;
+;     -- Combinational with a register        ; 12    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 26    ;
-;     -- 3 input functions                    ; 5     ;
-;     -- 2 input functions                    ; 6     ;
-;     -- 1 input functions                    ; 1     ;
+;     -- 4 input functions                    ; 43    ;
+;     -- 3 input functions                    ; 13    ;
+;     -- 2 input functions                    ; 37    ;
+;     -- 1 input functions                    ; 3     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 47    ;
-;     -- arithmetic mode                      ; 3     ;
+;     -- normal mode                          ; 115   ;
+;     -- arithmetic mode                      ; 9     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 16    ;
-; Total logic cells in carry chains           ; 4     ;
-; I/O pins                                    ; 42    ;
+; Total registers                             ; 40    ;
+; Total logic cells in carry chains           ; 12    ;
+; I/O pins                                    ; 90    ;
 ; Total memory bits                           ; 3072  ;
 ; Maximum fan-out node                        ; C     ;
-; Maximum fan-out                             ; 22    ;
-; Total fan-out                               ; 323   ;
-; Average fan-out                             ; 3.11  ;
+; Maximum fan-out                             ; 38    ;
+; Total fan-out                               ; 582   ;
+; Average fan-out                             ; 2.58  ;
 +---------------------------------------------+-------+
 
 
@@ -217,21 +225,36 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; Logic Cells ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                  ; Library Name ;
 +-------------------------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------------------+--------------+
-; |L3                                       ; 50 (4)      ; 16           ; 3072        ; 0            ; 0       ; 0         ; 0         ; 42   ; 0            ; 34 (4)       ; 12 (0)            ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |L3                                                                                  ; work         ;
+; |L3                                       ; 124 (9)     ; 40           ; 3072        ; 0            ; 0       ; 0         ; 0         ; 90   ; 0            ; 84 (9)       ; 28 (0)            ; 12 (0)           ; 12 (0)          ; 0 (0)      ; |L3                                                                                  ; work         ;
 ;    |BUSSUM2:inst12|                       ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BUSSUM2:inst12                                                                   ; work         ;
 ;    |BUSSUM2:inst26|                       ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BUSSUM2:inst26                                                                   ;              ;
+;    |BUSSUM2:inst29|                       ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BUSSUM2:inst29                                                                   ;              ;
+;    |BUSSUM5:inst33|                       ; 8 (8)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BUSSUM5:inst33                                                                   ; work         ;
+;    |BUSSUM5:inst7|                        ; 8 (8)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BUSSUM5:inst7                                                                    ; work         ;
+;    |BusEnable7:inst5|                     ; 8 (8)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BusEnable7:inst5                                                                 ; work         ;
+;    |BusEnable7:inst6|                     ; 8 (8)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BusEnable7:inst6                                                                 ; work         ;
 ;    |BusEnable:inst27|                     ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BusEnable:inst27                                                                 ; work         ;
-;    |DivergentBlock:inst17|                ; 16 (0)      ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 12 (0)       ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |L3|DivergentBlock:inst17                                                            ; work         ;
+;    |BusEnable:inst28|                     ; 6 (6)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|BusEnable:inst28                                                                 ;              ;
+;    |Counter8:inst31|                      ; 9 (1)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 8 (0)            ; 8 (0)           ; 0 (0)      ; |L3|Counter8:inst31                                                                  ;              ;
+;       |74163:inst1|                       ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |L3|Counter8:inst31|74163:inst1                                                      ;              ;
+;          |f74163:sub|                     ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |L3|Counter8:inst31|74163:inst1|f74163:sub                                           ;              ;
+;       |74163:inst2|                       ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |L3|Counter8:inst31|74163:inst2                                                      ;              ;
+;          |f74163:sub|                     ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |L3|Counter8:inst31|74163:inst2|f74163:sub                                           ;              ;
+;    |DivergentBlock:inst17|                ; 16 (0)      ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 12 (0)       ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |L3|DivergentBlock:inst17                                                            ;              ;
 ;       |16dmux:inst|                       ; 12 (12)     ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|DivergentBlock:inst17|16dmux:inst                                                ; work         ;
 ;       |74163:inst1|                       ; 4 (0)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |L3|DivergentBlock:inst17|74163:inst1                                                ; work         ;
 ;          |f74163:sub|                     ; 4 (4)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |L3|DivergentBlock:inst17|74163:inst1|f74163:sub                                     ; work         ;
 ;    |lpm_dff1:inst2|                       ; 6 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff1:inst2                                                                   ;              ;
-;       |lpm_ff:lpm_ff_component|           ; 6 (6)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component                                           ;              ;
+;       |lpm_ff:lpm_ff_component|           ; 6 (6)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff1:inst2|lpm_ff:lpm_ff_component                                           ; work         ;
 ;    |lpm_dff1:inst4|                       ; 6 (0)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff1:inst4                                                                   ; work         ;
 ;       |lpm_ff:lpm_ff_component|           ; 6 (6)       ; 6            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff1:inst4|lpm_ff:lpm_ff_component                                           ; work         ;
-;    |lpm_ram_dq2:inst3|                    ; 0 (0)       ; 0            ; 1536        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_ram_dq2:inst3                                                                ;              ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0            ; 1536        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component                                ;              ;
-;          |altsyncram_p0c1:auto_generated| ; 0 (0)       ; 0            ; 1536        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated ;              ;
+;    |lpm_dff2:inst10|                      ; 8 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff2:inst10                                                                  ; work         ;
+;       |lpm_ff:lpm_ff_component|           ; 8 (8)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff2:inst10|lpm_ff:lpm_ff_component                                          ; work         ;
+;    |lpm_dff2:inst9|                       ; 8 (0)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff2:inst9                                                                   ;              ;
+;       |lpm_ff:lpm_ff_component|           ; 8 (8)       ; 8            ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_dff2:inst9|lpm_ff:lpm_ff_component                                           ;              ;
+;    |lpm_ram_dq2:inst3|                    ; 0 (0)       ; 0            ; 1536        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_ram_dq2:inst3                                                                ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0            ; 1536        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component                                ; work         ;
+;          |altsyncram_p0c1:auto_generated| ; 0 (0)       ; 0            ; 1536        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated ; work         ;
 ;    |lpm_rom2:inst|                        ; 0 (0)       ; 0            ; 1536        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_rom2:inst                                                                    ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0            ; 1536        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component                                    ; work         ;
 ;          |altsyncram_mk21:auto_generated| ; 0 (0)       ; 0            ; 1536        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |L3|lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated     ; work         ;
@@ -254,12 +277,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 16    ;
+; Total registers                              ; 40    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 12    ;
+; Number of registers using Clock Enable       ; 28    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -374,6 +397,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Counter8:inst31|74163:inst1 ;
++------------------------+---------+---------------------------------------+
+; Parameter Name         ; Value   ; Type                                  ;
++------------------------+---------+---------------------------------------+
+; DEVICE_FAMILY          ; Stratix ; Untyped                               ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                          ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                        ;
++------------------------+---------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Counter8:inst31|74163:inst2 ;
++------------------------+---------+---------------------------------------+
+; Parameter Name         ; Value   ; Type                                  ;
++------------------------+---------+---------------------------------------+
+; DEVICE_FAMILY          ; Stratix ; Untyped                               ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                          ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                        ;
++------------------------+---------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: lpm_ram_dq2:inst3|altsyncram:altsyncram_component ;
 +------------------------------------+----------------------+------------------------------------+
@@ -433,6 +484,44 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_dff2:inst10|lpm_ff:lpm_ff_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; LPM_WIDTH              ; 8       ; Signed Integer                                    ;
+; LPM_AVALUE             ; UNUSED  ; Untyped                                           ;
+; LPM_SVALUE             ; UNUSED  ; Untyped                                           ;
+; LPM_FFTYPE             ; DFF     ; Untyped                                           ;
+; DEVICE_FAMILY          ; Stratix ; Untyped                                           ;
+; CBXI_PARAMETER         ; NOTHING ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_dff2:inst9|lpm_ff:lpm_ff_component ;
++------------------------+---------+--------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                             ;
++------------------------+---------+--------------------------------------------------+
+; LPM_WIDTH              ; 8       ; Signed Integer                                   ;
+; LPM_AVALUE             ; UNUSED  ; Untyped                                          ;
+; LPM_SVALUE             ; UNUSED  ; Untyped                                          ;
+; LPM_FFTYPE             ; DFF     ; Untyped                                          ;
+; DEVICE_FAMILY          ; Stratix ; Untyped                                          ;
+; CBXI_PARAMETER         ; NOTHING ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                   ;
++------------------------+---------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: lpm_dff1:inst2|lpm_ff:lpm_ff_component ;
 +------------------------+---------+--------------------------------------------------+
@@ -489,7 +578,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Fri Sep 29 20:19:24 2017
+    Info: Processing started: Mon Oct 02 12:20:38 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off L3 -c L3
 Info: Found 1 design units, including 1 entities, in source file divergentblock.bdf
     Info: Found entity 1: DivergentBlock
@@ -539,9 +628,11 @@ Info: Found 1 design units, including 1 entities, in source file bussum5.bdf
     Info: Found entity 1: BUSSUM5
 Info: Found 1 design units, including 1 entities, in source file busenable7.bdf
     Info: Found entity 1: BusEnable7
+Info: Found 2 design units, including 1 entities, in source file lpm_dff2.vhd
+    Info: Found design unit 1: lpm_dff2-SYN
+    Info: Found entity 1: lpm_dff2
 Info: Elaborating entity "L3" for the top level hierarchy
-Info: Elaborating entity "BUSSUM2" for hierarchy "BUSSUM2:inst26"
-Info: Elaborating entity "BusEnable" for hierarchy "BusEnable:inst27"
+Warning: Block or symbol "BUSSUM2" of instance "inst29" overlaps another block or symbol
 Info: Elaborating entity "DivergentBlock" for hierarchy "DivergentBlock:inst17"
 Info: Elaborating entity "16dmux" for hierarchy "DivergentBlock:inst17|16dmux:inst"
 Info: Elaborated megafunction instantiation "DivergentBlock:inst17|16dmux:inst"
@@ -549,6 +640,7 @@ Info: Elaborating entity "74163" for hierarchy "DivergentBlock:inst17|74163:inst
 Info: Elaborated megafunction instantiation "DivergentBlock:inst17|74163:inst1"
 Info: Elaborating entity "f74163" for hierarchy "DivergentBlock:inst17|74163:inst1|f74163:sub"
 Info: Elaborated megafunction instantiation "DivergentBlock:inst17|74163:inst1|f74163:sub", which is child of megafunction instantiation "DivergentBlock:inst17|74163:inst1"
+Info: Elaborating entity "BusEnable" for hierarchy "BusEnable:inst27"
 Info: Elaborating entity "lpm_dff1" for hierarchy "lpm_dff1:inst4"
 Info: Elaborating entity "lpm_ff" for hierarchy "lpm_dff1:inst4|lpm_ff:lpm_ff_component"
 Info: Elaborated megafunction instantiation "lpm_dff1:inst4|lpm_ff:lpm_ff_component"
@@ -556,6 +648,7 @@ Info: Instantiated megafunction "lpm_dff1:inst4|lpm_ff:lpm_ff_component" with th
     Info: Parameter "lpm_fftype" = "DFF"
     Info: Parameter "lpm_type" = "LPM_FF"
     Info: Parameter "lpm_width" = "6"
+Info: Elaborating entity "BUSSUM2" for hierarchy "BUSSUM2:inst12"
 Info: Elaborating entity "lpm_rom2" for hierarchy "lpm_rom2:inst"
 Info: Elaborating entity "altsyncram" for hierarchy "lpm_rom2:inst|altsyncram:altsyncram_component"
 Info: Elaborated megafunction instantiation "lpm_rom2:inst|altsyncram:altsyncram_component"
@@ -575,6 +668,11 @@ Info: Instantiated megafunction "lpm_rom2:inst|altsyncram:altsyncram_component" 
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_mk21.tdf
     Info: Found entity 1: altsyncram_mk21
 Info: Elaborating entity "altsyncram_mk21" for hierarchy "lpm_rom2:inst|altsyncram:altsyncram_component|altsyncram_mk21:auto_generated"
+Info: Elaborating entity "BUSSUM5" for hierarchy "BUSSUM5:inst33"
+Info: Elaborating entity "BusEnable7" for hierarchy "BusEnable7:inst34"
+Info: Elaborating entity "Counter8" for hierarchy "Counter8:inst31"
+Info: Elaborating entity "74163" for hierarchy "Counter8:inst31|74163:inst1"
+Info: Elaborated megafunction instantiation "Counter8:inst31|74163:inst1"
 Info: Elaborating entity "lpm_ram_dq2" for hierarchy "lpm_ram_dq2:inst3"
 Info: Elaborating entity "altsyncram" for hierarchy "lpm_ram_dq2:inst3|altsyncram:altsyncram_component"
 Info: Elaborated megafunction instantiation "lpm_ram_dq2:inst3|altsyncram:altsyncram_component"
@@ -597,16 +695,25 @@ Info: Instantiated megafunction "lpm_ram_dq2:inst3|altsyncram:altsyncram_compone
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_p0c1.tdf
     Info: Found entity 1: altsyncram_p0c1
 Info: Elaborating entity "altsyncram_p0c1" for hierarchy "lpm_ram_dq2:inst3|altsyncram:altsyncram_component|altsyncram_p0c1:auto_generated"
-Info: Converted 1 single input CARRY primitives to CARRY_SUM primitives
-Info: Implemented 104 device resources after synthesis - the final resource count might be different
-    Info: Implemented 11 input pins
-    Info: Implemented 31 output pins
-    Info: Implemented 50 logic cells
+Info: Elaborating entity "lpm_dff2" for hierarchy "lpm_dff2:inst10"
+Info: Elaborating entity "lpm_ff" for hierarchy "lpm_dff2:inst10|lpm_ff:lpm_ff_component"
+Info: Elaborated megafunction instantiation "lpm_dff2:inst10|lpm_ff:lpm_ff_component"
+Info: Instantiated megafunction "lpm_dff2:inst10|lpm_ff:lpm_ff_component" with the following parameter:
+    Info: Parameter "lpm_fftype" = "DFF"
+    Info: Parameter "lpm_type" = "LPM_FF"
+    Info: Parameter "lpm_width" = "8"
+Warning: Clock multiplexers are found and protected
+    Warning: Found clock multiplexer inst24~synth
+Info: Converted 3 single input CARRY primitives to CARRY_SUM primitives
+Info: Implemented 226 device resources after synthesis - the final resource count might be different
+    Info: Implemented 12 input pins
+    Info: Implemented 78 output pins
+    Info: Implemented 124 logic cells
     Info: Implemented 12 RAM segments
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 266 megabytes
-    Info: Processing ended: Fri Sep 29 20:19:27 2017
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 267 megabytes
+    Info: Processing ended: Mon Oct 02 12:20:41 2017
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 
