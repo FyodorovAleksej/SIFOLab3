@@ -402,113 +402,39 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 656 368)
-	(pt 656 384)
-	(bus)
-)
-(connector
-	(text "Res[0]" (rect 610 352 643 364)(font "Arial" ))
-	(pt 600 368)
-	(pt 656 368)
-)
-(connector
-	(text "Res[1]" (rect 610 336 643 348)(font "Arial" ))
-	(pt 600 352)
-	(pt 656 352)
-)
-(connector
 	(pt 656 336)
 	(pt 656 352)
 	(bus)
 )
 (connector
-	(text "Res[2]" (rect 610 320 643 332)(font "Arial" ))
-	(pt 600 336)
-	(pt 656 336)
-)
-(connector
 	(pt 656 320)
 	(pt 656 336)
 	(bus)
 )
 (connector
-	(text "Res[3]" (rect 610 304 643 316)(font "Arial" ))
-	(pt 600 320)
-	(pt 656 320)
-)
-(connector
 	(pt 656 304)
 	(pt 656 320)
 	(bus)
 )
 (connector
-	(text "Res[4]" (rect 610 288 643 300)(font "Arial" ))
-	(pt 600 304)
-	(pt 656 304)
-)
-(connector
 	(pt 656 288)
 	(pt 656 304)
 	(bus)
 )
 (connector
-	(text "Res[5]" (rect 610 272 643 284)(font "Arial" ))
-	(pt 600 288)
-	(pt 656 288)
-)
-(connector
 	(pt 656 272)
 	(pt 656 288)
 	(bus)
 )
 (connector
-	(text "Res[6]" (rect 610 256 643 268)(font "Arial" ))
-	(pt 600 272)
-	(pt 656 272)
-)
-(connector
 	(pt 656 256)
 	(pt 656 272)
 	(bus)
 )
 (connector
-	(text "Res[7]" (rect 610 240 643 252)(font "Arial" ))
-	(pt 600 256)
-	(pt 656 256)
-)
-(connector
 	(pt 656 240)
 	(pt 656 256)
 	(bus)
-)
-(connector
-	(text "Res[8]" (rect 610 224 643 236)(font "Arial" ))
-	(pt 600 240)
-	(pt 656 240)
-)
-(connector
-	(pt 656 224)
-	(pt 656 240)
-	(bus)
-)
-(connector
-	(text "Res[9]" (rect 610 208 643 220)(font "Arial" ))
-	(pt 600 224)
-	(pt 656 224)
-)
-(connector
-	(pt 656 208)
-	(pt 656 224)
-	(bus)
-)
-(connector
-	(text "Res[10]" (rect 610 192 648 204)(font "Arial" ))
-	(pt 600 208)
-	(pt 656 208)
-)
-(connector
-	(pt 600 192)
-	(pt 704 192)
 )
 (connector
 	(pt 232 328)
@@ -523,10 +449,6 @@ applicable agreement for further details.
 	(pt 296 304)
 )
 (connector
-	(pt 704 192)
-	(pt 704 88)
-)
-(connector
 	(pt 288 88)
 	(pt 704 88)
 )
@@ -535,14 +457,91 @@ applicable agreement for further details.
 	(pt 288 88)
 )
 (connector
+	(pt 656 224)
+	(pt 656 240)
+	(bus)
+)
+(connector
+	(text "Res[10]" (rect 610 176 648 188)(font "Arial" ))
+	(pt 600 192)
+	(pt 656 192)
+)
+(connector
+	(pt 656 192)
+	(pt 656 208)
+	(bus)
+)
+(connector
+	(pt 656 208)
+	(pt 656 224)
+	(bus)
+)
+(connector
+	(text "Res[9]" (rect 613 192 646 204)(font "Arial" ))
+	(pt 600 208)
+	(pt 656 208)
+)
+(connector
+	(text "Res[8]" (rect 610 208 643 220)(font "Arial" ))
+	(pt 600 224)
+	(pt 656 224)
+)
+(connector
+	(text "Res[7]" (rect 610 224 643 236)(font "Arial" ))
+	(pt 600 240)
+	(pt 656 240)
+)
+(connector
+	(text "Res[6]" (rect 610 240 643 252)(font "Arial" ))
+	(pt 600 256)
+	(pt 656 256)
+)
+(connector
+	(text "Res[5]" (rect 610 256 643 268)(font "Arial" ))
+	(pt 600 272)
+	(pt 656 272)
+)
+(connector
+	(text "Res[4]" (rect 610 272 643 284)(font "Arial" ))
+	(pt 600 288)
+	(pt 656 288)
+)
+(connector
+	(text "Res[3]" (rect 610 288 643 300)(font "Arial" ))
+	(pt 600 304)
+	(pt 656 304)
+)
+(connector
+	(text "Res[2]" (rect 610 304 643 316)(font "Arial" ))
+	(pt 600 320)
+	(pt 656 320)
+)
+(connector
+	(text "Res[1]" (rect 610 320 643 332)(font "Arial" ))
+	(pt 600 336)
+	(pt 656 336)
+)
+(connector
+	(text "Res[0]" (rect 610 336 643 348)(font "Arial" ))
+	(pt 600 352)
+	(pt 656 352)
+)
+(connector
 	(text "Res[10..0]" (rect 639 329 651 380)(font "Arial" )(vertical))
 	(pt 656 352)
-	(pt 656 368)
+	(pt 656 384)
 	(bus)
+)
+(connector
+	(pt 704 176)
+	(pt 704 88)
+)
+(connector
+	(pt 704 176)
+	(pt 600 176)
 )
 (junction (pt 344 192))
 (junction (pt 344 272))
-(junction (pt 656 368))
 (junction (pt 656 352))
 (junction (pt 656 336))
 (junction (pt 656 320))
@@ -552,3 +551,4 @@ applicable agreement for further details.
 (junction (pt 656 256))
 (junction (pt 656 240))
 (junction (pt 656 224))
+(junction (pt 656 208))
